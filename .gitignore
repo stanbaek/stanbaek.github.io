@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+.gitattributes
+
+# Other
+.spyproject/
+*.pyc
+.ipynb_checkpoints
+.DS_Store
+.vscode
+docs/module-00-06_Contributing.md
+docs/_build/
+docs/_work/
