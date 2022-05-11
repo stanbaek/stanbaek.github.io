@@ -1,8 +1,10 @@
 ---
 layout: archive
-title: "Publications"
+title: "Recent Publications"
 permalink: /publications/
 author_profile: true
+author_googlescholar: https://scholar.google.com/citations?user=0Knul6gAAAAJ&hl=en
+
 ---
 
 {% if author.googlescholar %}
