@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Stan Baek / Site Title"
+title                    : "Stan Baek / Home"
 title_separator          : "-"
 name                     : &name "Stan Baek"
 description              : &description "personal description"
@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "Stan Baek"
-  avatar           : "profile.jpg"
-  bio              : "U.S. Air Force Academy"
+  avatar           : "profile.png"
+  bio              : "Professor"
   location         : "USAFA"
   employer         :
   pubmed           :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/stanbaek"
+  linkedin         : "stanbaek"
   orcid            : "https://orcid.org/0000-0003-3840-5700"
   pinterest        :
   soundcloud       :
