@@ -83,7 +83,7 @@ author:
   name             : "Stan Baek"
   avatar           : "profile.png"
   bio              : "Professor"
-  location         : "USAFA"
+  location         : ["USAFA"](https://www.usafa.edu)
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=0Knul6gAAAAJ&hl=en"
