@@ -1,1 +1,0 @@
-Stan Baek - Homepage
