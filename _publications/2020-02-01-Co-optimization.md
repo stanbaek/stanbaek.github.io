@@ -2,7 +2,7 @@
 title: "Co-optimization of Speed Trajectory"
 collection: publications
 permalink: /publication/2020-02-01-Co-optimization
-date: 2021-02-01
+date: 2020-02-01
 venue: 'Applied Energy'
 paperurl:
 citation: 'Y. Kim, M. Figueroa-Santos, N. Prakash, S. Baek, J. Siegel, D. Rizzo, &quot;Co-optimization of speed trajectory and power management for a fuel-cell/battery electric vehicle,&quot; Applied Energy, vol. 260, Feb 2020, pp. 114254.
