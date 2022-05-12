@@ -1,7 +1,7 @@
 ---
 title: "Co-optimization of Speed Trajectory"
 collection: publications
-permalink: /publication/2020-02-01-Co-optimization
+permalink: /publication/2020-02-01-AppliedEnergy
 date: 2020-02-01
 venue: 'Applied Energy'
 paperurl:
