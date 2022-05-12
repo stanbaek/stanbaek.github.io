@@ -10,4 +10,4 @@ citation: 'S. Baek and G. York, &quot;Optimal sensor management for multiple tar
 
 <a href='https://stanbaek.github.io/files/consensus.pdf'>Download</a>
 
-Recommended citation: S. Baek and G. York, "Optimal sensor management for multiple target tracking using cooperative unmanned aerial vehicles," <i>International Conference on Unmanned Aircraft Systems (ICUAS)</i>, Athens, Greece, Sep 2020.
+<!--Recommended citation: S. Baek and G. York, "Optimal sensor management for multiple target tracking using cooperative unmanned aerial vehicles," <i>International Conference on Unmanned Aircraft Systems (ICUAS)</i>, Athens, Greece, Sep 2020.-->
