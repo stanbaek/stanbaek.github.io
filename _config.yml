@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Stan Baek / Home"
+title                    : "Stan Baek"
 title_separator          : "-"
 name                     : &name "Stan Baek"
 description              : &description "personal description"
