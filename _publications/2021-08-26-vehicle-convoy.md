@@ -1,10 +1,10 @@
 ---
-title: "Autonomous Ground Vehicle Convoy Systems"
+title: "Vehicle Convoy Systems"
 collection: publications
-permalink: /publication/2021-08-26-paper-title-number-3
+permalink: /publication/2021-08-26-vehicle-convoy
 excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2021-08-26
-venue: 'Journal 1'
+venue: 'Frontiers'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 citation: 'YC. Cheung, A. Mohammadi, S. Rawashdeh, S. Baek. (2018). &quot;Delivery of Healthcare Resources Using Autonomous Ground Vehicle Convoy Systems: An Overview.&quot; <i>Frontiers in Robotics and AI</i>. 8.'
 ---
