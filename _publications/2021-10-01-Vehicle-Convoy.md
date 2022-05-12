@@ -10,4 +10,5 @@ citation: 'C. Cheung, A. Mohammadi, S. Rawashdeh, S. Baek, &quot;Delivery of Hea
 
 <a href='https://www.frontiersin.org/articles/10.3389/frobt.2021.611978/full'>Download</a>
 
-Recommended citation: C. Cheung, A. Mohammadi, S. Rawashdeh, S. Baek, "Delivery of Healthcare Resources Using Autonomous Ground Vehicle Convoy Systems: An Overview," Frontiers in Robotics and AI, vol. 8, pp. 250, 2021.
+<!--Recommended citation: C. Cheung, A. Mohammadi, S. Rawashdeh, S. Baek, "Delivery of Healthcare Resources Using Autonomous Ground Vehicle Convoy Systems: An Overview," Frontiers in Robotics and AI, vol. 8, pp. 250, 2021.
+-->
