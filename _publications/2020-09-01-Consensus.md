@@ -3,7 +3,7 @@ title: "Optimal Sensor Management"
 collection: publications
 permalink: /publication/2020-09-01-Consensus
 date: 2021-10-01
-venue: 'Frontiers in Robotics and AI'
+venue: 'ICUAS'
 paperurl:
 citation: 'S. Baek and G. York, &quot;Optimal sensor management for multiple target tracking using cooperative unmanned aerial vehicles,&quot; <i>International Conference on Unmanned Aircraft Systems</i>, Athens, Greece, Sep 2020.'
 ---
