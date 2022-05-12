@@ -6,4 +6,9 @@ date: 2022-06-21
 venue: 'ICUAS'
 citation: 'A. Ham, S. Baek, G. York, &quot;Unmanned Aerial Vehicles (UAVs): Persistent Surveillance for a Military Scenario,&quot; <i>International Conference on Unmanned Aircraft Systems (ICUAS)</i>, Dubrovnik, Croatia, Jun 2022.'
 ---
+
+
+<a href='https://stanbaek.github.io/files/Persistent.pdf'>Download</a>
+
+
 Recommended citation: A. Ham, S. Baek, G. York, "Unmanned Aerial Vehicles (UAVs): Persistent Surveillance for a Military Scenario," <i>International Conference on Unmanned Aircraft Systems (ICUAS)</i>, Dubrovnik, Croatia, Jun 2022.
