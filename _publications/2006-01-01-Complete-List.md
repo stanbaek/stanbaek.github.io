@@ -1,7 +1,7 @@
 ---
 title: "Complete List of Publications"
 collection: publications
-permalink: /publication/2006-01-01-Complete-List
+permalink: 
 date: 2006-01-01
 venue: 'various journals since'
 paperurl:
