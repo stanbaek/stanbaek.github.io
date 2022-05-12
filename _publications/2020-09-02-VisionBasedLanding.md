@@ -1,7 +1,7 @@
 ---
 title: "Vision-based Autonomous Landing"
 collection: publications
-permalink: /publication/2020-09-01-VisionBasedLanding
+permalink: /publication/2020-09-02-VisionBasedLanding
 date: 2020-09-02
 venue: 'ICUAS'
 paperurl:
