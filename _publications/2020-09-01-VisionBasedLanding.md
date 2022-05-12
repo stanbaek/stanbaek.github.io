@@ -1,13 +1,13 @@
 ---
-title: "Optimal Sensor Management"
+title: "Vision-based Autonomous Landing"
 collection: publications
-permalink: /publication/2020-09-01-Consensus
-date: 2021-10-01
-venue: 'Frontiers in Robotics and AI'
+permalink: /publication/2020-09-01-VisionBasedLanding
+date: 2021-09-01
+venue: 'ICUAS'
 paperurl:
-citation: 'S. Baek and G. York, &quot;Optimal sensor management for multiple target tracking using cooperative unmanned aerial vehicles,&quot; <i>International Conference on Unmanned Aircraft Systems</i>, Athens, Greece, Sep 2020.'
+citation: 'A. Mohammadi, Y. Feng, C. Zhang, S. Rawashdeh, and S. Baek, &quot;Vision-based autonomous landing using an MPC-controlled micro UAV on a moving platform,&quot; <i>International Conference on Unmanned Aircraft Systems</i>, Athens, Greece, Sep 2020.'
 ---
 
-<a href='https://stanbaek.github.io/files/consensus.pdf'>Download</a>
+<a href='https://stanbaek.github.io/files/Autonomous_Landing_2020.pdf'>Download</a>
 
-Recommended citation: S. Baek and G. York, "Optimal sensor management for multiple target tracking using cooperative unmanned aerial vehicles," <i>International Conference on Unmanned Aircraft Systems (ICUAS)</i>, Athens, Greece, Sep 2020.
+Recommended citation: A. Mohammadi, Y. Feng, C. Zhang, S. Rawashdeh, and S. Baek, "Vision-based autonomous landing using an MPC-controlled micro UAV on a moving platform," <i>International Conference on Unmanned Aircraft Systems (ICUAS)</i>, Athens, Greece, Sep 2020.

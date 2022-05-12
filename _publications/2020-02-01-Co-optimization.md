@@ -1,13 +1,13 @@
 ---
-title: "Optimal Sensor Management"
+title: "Co-optimization of Speed Trajectory"
 collection: publications
-permalink: /publication/2020-09-01-Consensus
+permalink: /publication/2020-02-01-Co-optimization
 date: 2021-10-01
-venue: 'Frontiers in Robotics and AI'
+venue: 'Applied Energy'
 paperurl:
-citation: 'S. Baek and G. York, &quot;Optimal sensor management for multiple target tracking using cooperative unmanned aerial vehicles,&quot; <i>International Conference on Unmanned Aircraft Systems</i>, Athens, Greece, Sep 2020.'
+citation: 'Y. Kim, M. Figueroa-Santos, N. Prakash, S. Baek, J. Siegel, D. Rizzo, &quot;Co-optimization of speed trajectory and power management for a fuel-cell/battery electric vehicle,&quot; Applied Energy, vol. 260, Feb 2020, pp. 114254'
 ---
 
-<a href='https://stanbaek.github.io/files/consensus.pdf'>Download</a>
+<a href='https://doi.org/10.1016/j.apenergy.2019.114254'>Link</a>
 
-Recommended citation: S. Baek and G. York, "Optimal sensor management for multiple target tracking using cooperative unmanned aerial vehicles," <i>International Conference on Unmanned Aircraft Systems (ICUAS)</i>, Athens, Greece, Sep 2020.
+Recommended citation: Y. Kim, M. Figueroa-Santos, N. Prakash, S. Baek, J. Siegel, D. Rizzo, "Co-optimization of speed trajectory and power management for a fuel-cell/battery electric vehicle," Applied Energy, vol. 260, Feb 2020, pp. 114254.
