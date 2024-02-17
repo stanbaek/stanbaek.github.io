@@ -24,6 +24,9 @@ copyright: '2022' # Copyright year to be placed in the footer
 # bibtex_bibfiles:
 #  - references.bib
 
+jb:
+  version: 0.15.2
+
 toc:
   include: ["index"]
 # Information about where the book exists on the web
@@ -32,7 +35,7 @@ repository:
   #path_to_book: docs  # Optional path to your book, relative to the repository root
   #branch: master  # Which branch of the repository should be used when creating links (optional)
 
-output_dir: docs
+output_dir: "docs"
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
