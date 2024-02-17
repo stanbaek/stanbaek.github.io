@@ -4,20 +4,18 @@
 format: jb-book
 root: intro
 parts:
-- caption: Course Info
+- caption: Teaching
   chapters:
-  - file: syllabus.md
-  - file: schedule.md
-  - file: SoftwareConfiguration.md
+  - url: https://usafa-ece.github.io/ece382/intro.html
+    title: ECE382 
+  - url: https://stanbaek.github.io/ece387
+    title: ECE387
+  - url: https://stanbaek.github.io/ece487
+    title: ECE487
+   
+- caption: Reflections
+  chapters:
   - file: NoPointer.ipynb
-
-- caption: Labs
-  chapters:
-  - file: PythonTutorial.md
-
-
-- caption: Supplementary
-  chapters:
   - file: PythonContainers.md
   - file: NumPy.md
   - file: videos.md
