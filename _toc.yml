@@ -1,0 +1,24 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: Course Info
+  chapters:
+  - file: syllabus.md
+  - file: schedule.md
+  - file: SoftwareConfiguration.md
+  - file: NoPointer.ipynb
+
+- caption: Labs
+  chapters:
+  - file: PythonTutorial.md
+
+
+- caption: Supplementary
+  chapters:
+  - file: PythonContainers.md
+  - file: NumPy.md
+  - file: videos.md
+  

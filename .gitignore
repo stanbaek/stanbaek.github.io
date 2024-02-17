@@ -1,2 +1,14 @@
-_site/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+.gitattributes
 
+# Other
+.spyproject/
+*.pyc
+.ipynb_checkpoints
+.DS_Store
+.vscode
+.venv
+docs/_build/
+docs/_work/
