@@ -16,7 +16,5 @@ parts:
 - caption: Reflections
   chapters:
   - file: NoPointer.ipynb
-  - file: PythonContainers.md
-  - file: NumPy.md
-  - file: videos.md
+
   
