@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Complex Functions &#8212; Stan Baek</title>
+    <title>Visualizing Complex Functions &#8212; Stan Baek</title>
   
   
   
@@ -170,7 +170,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Blog</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="NoPointer.html">↗️ No Pointers in Python?</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Complex Functions</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Visualizing Complex Functions</a></li>
 </ul>
 
     </div>
@@ -352,7 +352,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Complex Functions</h1>
+    <h1>Visualizing Complex Functions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -366,8 +366,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="complex-functions">
-<h1>Complex Functions<a class="headerlink" href="#complex-functions" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="visualizing-complex-functions">
+<h1>Visualizing Complex Functions<a class="headerlink" href="#visualizing-complex-functions" title="Permalink to this heading">#</a></h1>
 <p>What is the domain and range of <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>? It’s likely that your high school math teacher emphasized that both the domain and range comprise positive real numbers, as illustrated in the plot below:</p>
 <a class="reference internal image-reference" href="_images/sqrt_x_real.png"><img alt="_images/sqrt_x_real.png" class="align-center" src="_images/sqrt_x_real.png" style="width: 360px;" /></a>
 <p>For engineering students, it’s well-known that <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> becomes a complex number when <span class="math notranslate nohighlight">\(x\)</span> is negative. Consequently, the domain extends across all real numbers, denoted as <span class="math notranslate nohighlight">\((-\infty, \infty)\)</span>, and the range encompasses complex numbers, represented as <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>. Now, let’s explore the visualization of <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>. As you’re aware, complex numbers can be portrayed in two-dimensional space, where the real part aligns with the <span class="math notranslate nohighlight">\(x\)</span>-axis, and the imaginary part aligns with the <span class="math notranslate nohighlight">\(y\)</span>-axis.</p>
@@ -387,6 +387,22 @@ document.write(`
 <p>In three-dimensional space, the distinction between the two helixes becomes apparent. The two complex exponential functions are orthogonal to each other, signifying their lack of correlation. This distinction is evident when observing their real and imaginary parts, as depicted below.</p>
 <a class="reference internal image-reference" href="_images/comp_exponential2.gif"><img alt="_images/comp_exponential2.gif" class="align-center" src="_images/comp_exponential2.gif" style="width: 420px;" /></a>
 <br>
+<p>Up to this point, our focus has been on unit complex exponential functions. Now, let’s turn our attention to a general complex function, particularly</p>
+<div class="math notranslate nohighlight">
+\[ H(\omega) = \frac{13}{13-\omega^2 + j4\omega}\]</div>
+<p>In contrast to the unit complex exponential functions discussed earlier, the magnitude and phase of general complex functions do not demonstrate linear changes with varying frequencies. As depicted in the figure below, interpreting the trends of the curves becomes challenging, even in a 3-dimensional plot.</p>
+<a class="reference internal image-reference" href="_images/bode_3d.gif"><img alt="_images/bode_3d.gif" class="align-center" src="_images/bode_3d.gif" style="width: 420px;" /></a>
+<br>
+<p>A widely embraced strategy to enhance the analysis of complex functions involves decoupling the magnitude and phase components. This separation leads to the creation of two distinct 2-dimensional plots: one showcasing the magnitude and the other illustrating the phase with respect to varying frequencies, as visually represented below.</p>
+<a class="reference internal image-reference" href="_images/bode_linear.png"><img alt="_images/bode_linear.png" class="align-center" src="_images/bode_linear.png" style="width: 420px;" /></a>
+<br>
+<p>These graphical representations are collectively known as <strong>Bode plots</strong>. The Bode plot serves as a valuable tool in understanding how a system responds to different frequencies. When a logarithmic scale is applied, the Bode plot appears as demonstrated in the figure below:</p>
+<a class="reference internal image-reference" href="_images/bode_log.png"><img alt="_images/bode_log.png" class="align-center" src="_images/bode_log.png" style="width: 420px;" /></a>
+<br>
+<p>Additionally, when examining the 3-dimensional plot in the real-imaginary plane, it transforms into what is known as the Nyquist plot:</p>
+<a class="reference internal image-reference" href="_images/nyquist.png"><img alt="_images/nyquist.png" class="align-center" src="_images/nyquist.png" style="width: 420px;" /></a>
+<br>
+<p>The Nyquist plot, being a parametric representation of a frequency response, finds extensive use in the fields of automatic control and signal processing. It provides valuable insights into the stability and behavior of dynamic systems, making it a crucial tool for engineers and researchers.</p>
 </section>
 
     <script type="text/x-thebe-config">
