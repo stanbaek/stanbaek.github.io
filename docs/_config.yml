@@ -80,6 +80,7 @@ sphinx:
   config:   # key-value pairs to directly over-ride the Sphinx configuration
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
+
 # Add a "Launch on Google Colab" button to .ipynb files
-# launch_buttons:
-#   colab_url: "https://colab.research.google.com"
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
