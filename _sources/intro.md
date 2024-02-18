@@ -1,10 +1,12 @@
-# Stan Baek, PhD
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=Hello!+I+am+Stan+%F0%9F%91%8B)](https://stanbaek.github.io)
 
-
 [![profile](https://img.shields.io/badge/🏫official-profile-blue)](https://www.usafa.edu/facultyprofile/?smid=35297) [![scholar](https://img.shields.io/badge/🎓google-scholar-green)](https://scholar.google.com/citations?user=0Knul6gAAAAJ&hl=en) [![scholar](https://img.shields.io/badge/📓ece382-jupyter_book-orange)](https://usafa-ece.github.io/ece382/intro.html) 
 
+```{image} ./stanbaek.png
+:width: 240
+:align: left
+```
 
 Welcome! I am a [![job](https://img.shields.io/badge/robotics-professor-red)](https://stanbaek.github.io) in the [Department of Electrical and Computer Engineering](https://www.usafa.edu/department/electrical-computer-engineering) at the [United States 🦅 Air Force Academy](https://www.usafa.edu).  I received the Bachelor’s, Master’s, and Ph.D. degrees 🎓 from the Department of Electrical Engineering 💡 and Computer Sciences 💻, [University of California, Berkeley](https:www.berkeley.edu). 
 
