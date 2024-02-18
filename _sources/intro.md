@@ -1,3 +1,4 @@
+# Stan Baek, Ph.D.
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=Hello!+I+am+Stan+%F0%9F%91%8B)](https://stanbaek.github.io)
 
