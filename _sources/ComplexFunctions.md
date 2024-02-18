@@ -125,7 +125,9 @@ This representation provides a more manageable visualization, offering valuable 
 Crucially, the transfer function assumes the role of the frequency response of a system when the real part of $s$ is set to zero, i.e., $s=j\omega$ or $s|_{\sigma=0}=j\omega$. Thus, the red line along the imaginary axis in the 3-D plot represents the frequency response of the system, i.e., $H(s)|_{s=j\omega}=H(j\omega)$. This insight enhances our understanding of the system's characteristics across different frequencies.
 
 
-Download the MATLAB files to render the plots used on this page.
-- [complex_plots.m](./files/complex_plots.m) to render $\sqrt{x}$ and complex exponential functions.
-- [FrequencyResponse.m](./files/FrequencyResponse.m) to render the Bode plots.
-- [PlottingPoleZeros.m](./files/PlottingPoleZeros.m) to render the pole-zero plots.
+
+Download the MATLAB files to generate the plots used on this page:
+- [complex_plots.m](./files/complex_plots.m) : Used for rendering $\sqrt{x}$ and complex exponential functions.
+- [FrequencyResponse.m](./files/FrequencyResponse.m): Used for rendering the Bode plots.
+- [PlottingPoleZeros.m](./files/PlottingPoleZeros.m): Used for rendering the pole-zero plots.
+
