@@ -3,7 +3,7 @@
 
 title: Stan Baek
 author: Stan Baek 
-logo: stanbaek.png
+logo: robot.png
 copyright: '2024' # Copyright year to be placed in the footer
 
 # Force re-execution of notebooks on each build.
@@ -39,10 +39,10 @@ output_dir: "docs"
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-# html:
-#   favicon: favicon.ico
-#   use_issues_button: true
-#   use_repository_button: true
+html:
+  favicon: favicon.ico
+  use_issues_button: true
+  use_repository_button: true
 
 # output: 
 #   html_document:
