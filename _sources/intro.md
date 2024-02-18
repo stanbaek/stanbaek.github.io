@@ -2,9 +2,7 @@
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=Hello!+I+am+Stan+%F0%9F%91%8B)](https://stanbaek.github.io)
 
-[![profile](https://img.shields.io/badge/🏫official-profile-blue)](https://www.usafa.edu/facultyprofile/?smid=35297) [![scholar](https://img.shields.io/badge/🎓google-scholar-green)](https://scholar.google.com/citations?user=0Knul6gAAAAJ&hl=en) [![youtube](https://img.shields.io/badge/🎥youtube-channel-red)](https://www.youtube.com/user/stanbaek)
-
-[![ece487](https://img.shields.io/badge/✏️ece487-Machine_Learning-brown)](https://stanbaek.github.io/ece487/intro.html) [![ece382](https://img.shields.io/badge/💾ece382-Embedded_Systems-purple)](https://usafa-ece.github.io/ece382/intro.html) [![ece387](https://img.shields.io/badge/🤖ece387-Intro_Robotics-cyan)](https://stanbaek.github.io/ece387/intro.html)
+[![profile](https://img.shields.io/badge/🏫official-profile-blue)](https://www.usafa.edu/facultyprofile/?smid=35297) [![scholar](https://img.shields.io/badge/🎓google-scholar-green)](https://scholar.google.com/citations?user=0Knul6gAAAAJ&hl=en) [![youtube](https://img.shields.io/badge/🎥youtube-channel-red)](https://www.youtube.com/user/stanbaek) [![ece487](https://img.shields.io/badge/✏️ece487-Machine_Learning-brown)](https://stanbaek.github.io/ece487/intro.html) [![ece382](https://img.shields.io/badge/💾ece382-Embedded_Systems-purple)](https://usafa-ece.github.io/ece382/intro.html) [![ece387](https://img.shields.io/badge/🤖ece387-Intro_Robotics-cyan)](https://stanbaek.github.io/ece387/intro.html)
 
 ```{image} ./stanbaek.png
 :width: 240
