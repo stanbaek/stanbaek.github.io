@@ -1,5 +1,6 @@
 # Visualizing Complex Functions
 
+## Visualizing Simple Complex Functions
 What is the domain and range of $f(x)=\sqrt{x}$? It's likely that your high school math teacher emphasized that both the domain and range comprise positive real numbers, as illustrated in the plot below:
 
 ```{image} ./figures/sqrt_x_real.png
@@ -17,6 +18,8 @@ Given this, how would you graph $f(x)=\sqrt{x}$? Complex functions need a 3-dime
 ```
 
 Here, the $x$-axis corresponds to the $x$ values, the $y$-axis to the real part, and the $z$-axis to the imaginary part. Notably, when $x$ is positive, $f(x)$ is always real, while when $x$ is negative, $f(x)$ is consistently imaginary. This distinction adds a layer of understanding to the behavior of the complex function across different domains.
+
+## Visualizing Complex Exponential Functions
 
 Let's explore a complex exponential function given by $f(t)=e^{j\theta}$. This function represents a collection of points on the unit circle. As the parameter 
 $\theta$ increases, the complex function $f(\theta)$ traces a counterclockwise path from 1 and completes a full revolution, returning to 1 with each period. 
@@ -51,6 +54,8 @@ In three-dimensional space, the distinction between the two helixes becomes appa
 ```
 <br>
 
+## Visualizing General Complex Functions
+
 Up to this point, our focus has been on unit complex exponential functions. Now, let's turn our attention to a general complex function, particularly
 
 $$ H(\omega) = \frac{13}{13-\omega^2 + j4\omega}$$
@@ -63,7 +68,7 @@ In contrast to the unit complex exponential functions discussed earlier, the mag
 ```
 <br>
 
-A widely embraced strategy to enhance the analysis of complex functions involves decoupling the magnitude and phase components. This separation leads to the creation of two distinct 2-dimensional plots: one showcasing the magnitude and the other illustrating the phase with respect to varying frequencies, as visually represented below.
+A widely embraced strategy to enhance the analysis of complex functions involves decoupling the magnitude and phase components. This separation leads to the creation of two distinct 2-dimensional plots: one showcasing the magnitude, $|H(\omega)|$, and the other illustrating the phase, $\angle H(\omega)$, with respect to varying frequencies, as visually represented below.
 
 ```{image} ./figures/bode_linear.png
 :width: 420
@@ -71,7 +76,11 @@ A widely embraced strategy to enhance the analysis of complex functions involves
 ```
 <br>
 
-These graphical representations are collectively known as **Bode plots**. The Bode plot serves as a valuable tool in understanding how a system responds to different frequencies. When a logarithmic scale is applied, the Bode plot appears as demonstrated in the figure below:
+These graphical representations are collectively known as **Bode plots**. It's important to recognize that, a century ago, Bode did not have access to the advanced 3-D rendering tools available today, and consequently, they relied on 2-dimensional visualization.
+
+The Bode plot stands as an invaluable instrument for comprehending a system's response across various frequencies. When employing a logarithmic scale, the Bode plot takes the form illustrated in the figure below:
+
+
 
 ```{image} ./figures/bode_log.png
 :width: 420
@@ -89,3 +98,34 @@ Additionally, when examining the 3-dimensional plot in the real-imaginary plane,
 
 The Nyquist plot, being a parametric representation of a frequency response, finds extensive use in the fields of automatic control and signal processing. It provides valuable insights into the stability and behavior of dynamic systems, making it a crucial tool for engineers and researchers.
 
+
+## Visualizing 4-D Complex Functions
+
+Until now, our exploration has centered on complex functions with a real domain ($\mathbb{R}$) and a complex range ($\mathbb{C}$). Let's now delve into complex functions with both a complex domain ($\mathbb{C}$) and a complex range ($\mathbb{C}$). Specifically, we will examine the transfer function characterized by the expression:
+
+$$ H(s) = \frac{s+2}{s^2+2s+s}$$
+
+Here, $s=\sigma+j\omega$ represents a complex number, introducing two variables for the domain and two for the range. Attempting to visualize this function in 3-dimensional space becomes impractical due to the involvement of four independent variables in transfer functions. Consequently, we need to decouple the magnitude and phase components, represented as $|H(s)|$ and $\angle H(s)$, respectively. Although the domain of each component remains complex ($\mathbb{C}$), the range is now real ($\mathbb{R}$). The magnitude response, $|H(s)|$, is commonly referred to as the pole-zero map, often depicted in 2-dimensional space, as shown below.
+
+```{image} ./figures/pzplot.png
+:width: 420
+:align: center
+```
+<br>
+
+This representation provides a more manageable visualization, offering valuable insights into the behavior of the complex function across various frequencies and complex values of $s$. It's important to note that this 2-dimensional portrayal is a simplified representation for its corresponding 3-dimensional plot, as depicted below:
+
+```{image} ./figures/pzplot_3d.gif
+:width: 420
+:align: center
+```
+<br>
+
+
+Crucially, the transfer function assumes the role of the frequency response of a system when the real part of $s$ is set to zero, i.e., $s=j\omega$ or $s|_{\sigma=0}=j\omega$. Thus, the red line along the imaginary axis in the 3-D plot represents the frequency response of the system, i.e., $H(s)|_{s=j\omega}=H(j\omega)$. This insight enhances our understanding of the system's characteristics across different frequencies.
+
+
+Download the MATLAB files to render the plots used on this page.
+- [complex_plots.m](./files/complex_plots.m) to render $\sqrt{x}$ and complex exponential functions.
+- [FrequencyResponse.m](./files/FrequencyResponse.m) to render the Bode plots.
+- [PlottingPoleZeros.m](./files/PlottingPoleZeros.m) to render the pole-zero plots.

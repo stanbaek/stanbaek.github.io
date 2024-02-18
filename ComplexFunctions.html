@@ -341,7 +341,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -357,6 +359,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-simple-complex-functions">Visualizing Simple Complex Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-complex-exponential-functions">Visualizing Complex Exponential Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-general-complex-functions">Visualizing General Complex Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-4-d-complex-functions">Visualizing 4-D Complex Functions</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -368,12 +381,17 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="visualizing-complex-functions">
 <h1>Visualizing Complex Functions<a class="headerlink" href="#visualizing-complex-functions" title="Permalink to this heading">#</a></h1>
+<section id="visualizing-simple-complex-functions">
+<h2>Visualizing Simple Complex Functions<a class="headerlink" href="#visualizing-simple-complex-functions" title="Permalink to this heading">#</a></h2>
 <p>What is the domain and range of <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>? It’s likely that your high school math teacher emphasized that both the domain and range comprise positive real numbers, as illustrated in the plot below:</p>
 <a class="reference internal image-reference" href="_images/sqrt_x_real.png"><img alt="_images/sqrt_x_real.png" class="align-center" src="_images/sqrt_x_real.png" style="width: 360px;" /></a>
 <p>For engineering students, it’s well-known that <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> becomes a complex number when <span class="math notranslate nohighlight">\(x\)</span> is negative. Consequently, the domain extends across all real numbers, denoted as <span class="math notranslate nohighlight">\((-\infty, \infty)\)</span>, and the range encompasses complex numbers, represented as <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>. Now, let’s explore the visualization of <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>. As you’re aware, complex numbers can be portrayed in two-dimensional space, where the real part aligns with the <span class="math notranslate nohighlight">\(x\)</span>-axis, and the imaginary part aligns with the <span class="math notranslate nohighlight">\(y\)</span>-axis.</p>
 <p>Given this, how would you graph <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>? Complex functions need a 3-dimensional representation, as depicted below:</p>
 <a class="reference internal image-reference" href="_images/sqrt_x_3d.gif"><img alt="_images/sqrt_x_3d.gif" class="align-center" src="_images/sqrt_x_3d.gif" style="width: 360px;" /></a>
 <p>Here, the <span class="math notranslate nohighlight">\(x\)</span>-axis corresponds to the <span class="math notranslate nohighlight">\(x\)</span> values, the <span class="math notranslate nohighlight">\(y\)</span>-axis to the real part, and the <span class="math notranslate nohighlight">\(z\)</span>-axis to the imaginary part. Notably, when <span class="math notranslate nohighlight">\(x\)</span> is positive, <span class="math notranslate nohighlight">\(f(x)\)</span> is always real, while when <span class="math notranslate nohighlight">\(x\)</span> is negative, <span class="math notranslate nohighlight">\(f(x)\)</span> is consistently imaginary. This distinction adds a layer of understanding to the behavior of the complex function across different domains.</p>
+</section>
+<section id="visualizing-complex-exponential-functions">
+<h2>Visualizing Complex Exponential Functions<a class="headerlink" href="#visualizing-complex-exponential-functions" title="Permalink to this heading">#</a></h2>
 <p>Let’s explore a complex exponential function given by <span class="math notranslate nohighlight">\(f(t)=e^{j\theta}\)</span>. This function represents a collection of points on the unit circle. As the parameter
 <span class="math notranslate nohighlight">\(\theta\)</span> increases, the complex function <span class="math notranslate nohighlight">\(f(\theta)\)</span> traces a counterclockwise path from 1 and completes a full revolution, returning to 1 with each period.</p>
 <a class="reference internal image-reference" href="_images/comp_exp.png"><img alt="_images/comp_exp.png" class="align-center" src="_images/comp_exp.png" style="width: 360px;" /></a>
@@ -387,22 +405,46 @@ document.write(`
 <p>In three-dimensional space, the distinction between the two helixes becomes apparent. The two complex exponential functions are orthogonal to each other, signifying their lack of correlation. This distinction is evident when observing their real and imaginary parts, as depicted below.</p>
 <a class="reference internal image-reference" href="_images/comp_exponential2.gif"><img alt="_images/comp_exponential2.gif" class="align-center" src="_images/comp_exponential2.gif" style="width: 420px;" /></a>
 <br>
+</section>
+<section id="visualizing-general-complex-functions">
+<h2>Visualizing General Complex Functions<a class="headerlink" href="#visualizing-general-complex-functions" title="Permalink to this heading">#</a></h2>
 <p>Up to this point, our focus has been on unit complex exponential functions. Now, let’s turn our attention to a general complex function, particularly</p>
 <div class="math notranslate nohighlight">
 \[ H(\omega) = \frac{13}{13-\omega^2 + j4\omega}\]</div>
 <p>In contrast to the unit complex exponential functions discussed earlier, the magnitude and phase of general complex functions do not demonstrate linear changes with varying frequencies. As depicted in the figure below, interpreting the trends of the curves becomes challenging, even in a 3-dimensional plot.</p>
 <a class="reference internal image-reference" href="_images/bode_3d.gif"><img alt="_images/bode_3d.gif" class="align-center" src="_images/bode_3d.gif" style="width: 420px;" /></a>
 <br>
-<p>A widely embraced strategy to enhance the analysis of complex functions involves decoupling the magnitude and phase components. This separation leads to the creation of two distinct 2-dimensional plots: one showcasing the magnitude and the other illustrating the phase with respect to varying frequencies, as visually represented below.</p>
+<p>A widely embraced strategy to enhance the analysis of complex functions involves decoupling the magnitude and phase components. This separation leads to the creation of two distinct 2-dimensional plots: one showcasing the magnitude, <span class="math notranslate nohighlight">\(|H(\omega)|\)</span>, and the other illustrating the phase, <span class="math notranslate nohighlight">\(\angle H(\omega)\)</span>, with respect to varying frequencies, as visually represented below.</p>
 <a class="reference internal image-reference" href="_images/bode_linear.png"><img alt="_images/bode_linear.png" class="align-center" src="_images/bode_linear.png" style="width: 420px;" /></a>
 <br>
-<p>These graphical representations are collectively known as <strong>Bode plots</strong>. The Bode plot serves as a valuable tool in understanding how a system responds to different frequencies. When a logarithmic scale is applied, the Bode plot appears as demonstrated in the figure below:</p>
+<p>These graphical representations are collectively known as <strong>Bode plots</strong>. It’s important to recognize that, a century ago, Bode did not have access to the advanced 3-D rendering tools available today, and consequently, they relied on 2-dimensional visualization.</p>
+<p>The Bode plot stands as an invaluable instrument for comprehending a system’s response across various frequencies. When employing a logarithmic scale, the Bode plot takes the form illustrated in the figure below:</p>
 <a class="reference internal image-reference" href="_images/bode_log.png"><img alt="_images/bode_log.png" class="align-center" src="_images/bode_log.png" style="width: 420px;" /></a>
 <br>
 <p>Additionally, when examining the 3-dimensional plot in the real-imaginary plane, it transforms into what is known as the Nyquist plot:</p>
 <a class="reference internal image-reference" href="_images/nyquist.png"><img alt="_images/nyquist.png" class="align-center" src="_images/nyquist.png" style="width: 420px;" /></a>
 <br>
 <p>The Nyquist plot, being a parametric representation of a frequency response, finds extensive use in the fields of automatic control and signal processing. It provides valuable insights into the stability and behavior of dynamic systems, making it a crucial tool for engineers and researchers.</p>
+</section>
+<section id="visualizing-4-d-complex-functions">
+<h2>Visualizing 4-D Complex Functions<a class="headerlink" href="#visualizing-4-d-complex-functions" title="Permalink to this heading">#</a></h2>
+<p>Until now, our exploration has centered on complex functions with a real domain (<span class="math notranslate nohighlight">\(\mathbb{R}\)</span>) and a complex range (<span class="math notranslate nohighlight">\(\mathbb{C}\)</span>). Let’s now delve into complex functions with both a complex domain (<span class="math notranslate nohighlight">\(\mathbb{C}\)</span>) and a complex range (<span class="math notranslate nohighlight">\(\mathbb{C}\)</span>). Specifically, we will examine the transfer function characterized by the expression:</p>
+<div class="math notranslate nohighlight">
+\[ H(s) = \frac{s+2}{s^2+2s+s}\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(s=\sigma+j\omega\)</span> represents a complex number, introducing two variables for the domain and two for the range. Attempting to visualize this function in 3-dimensional space becomes impractical due to the involvement of four independent variables in transfer functions. Consequently, we need to decouple the magnitude and phase components, represented as <span class="math notranslate nohighlight">\(|H(s)|\)</span> and <span class="math notranslate nohighlight">\(\angle H(s)\)</span>, respectively. Although the domain of each component remains complex (<span class="math notranslate nohighlight">\(\mathbb{C}\)</span>), the range is now real (<span class="math notranslate nohighlight">\(\mathbb{R}\)</span>). The magnitude response, <span class="math notranslate nohighlight">\(|H(s)|\)</span>, is commonly referred to as the pole-zero map, often depicted in 2-dimensional space, as shown below.</p>
+<a class="reference internal image-reference" href="_images/pzplot.png"><img alt="_images/pzplot.png" class="align-center" src="_images/pzplot.png" style="width: 420px;" /></a>
+<br>
+<p>This representation provides a more manageable visualization, offering valuable insights into the behavior of the complex function across various frequencies and complex values of <span class="math notranslate nohighlight">\(s\)</span>. It’s important to note that this 2-dimensional portrayal is a simplified representation for its corresponding 3-dimensional plot, as depicted below:</p>
+<a class="reference internal image-reference" href="_images/pzplot_3d.gif"><img alt="_images/pzplot_3d.gif" class="align-center" src="_images/pzplot_3d.gif" style="width: 420px;" /></a>
+<br>
+<p>Crucially, the transfer function assumes the role of the frequency response of a system when the real part of <span class="math notranslate nohighlight">\(s\)</span> is set to zero, i.e., <span class="math notranslate nohighlight">\(s=j\omega\)</span> or <span class="math notranslate nohighlight">\(s|_{\sigma=0}=j\omega\)</span>. Thus, the red line along the imaginary axis in the 3-D plot represents the frequency response of the system, i.e., <span class="math notranslate nohighlight">\(H(s)|_{s=j\omega}=H(j\omega)\)</span>. This insight enhances our understanding of the system’s characteristics across different frequencies.</p>
+<p>Download the MATLAB files to render the plots used on this page.</p>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="_downloads/d92a2b9fb902f5e922152224dbe308e3/complex_plots.m"><span class="xref download myst">complex_plots.m</span></a> to render <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> and complex exponential functions.</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/ff37978f6dcc9d91ee07bc40b8ef404a/FrequencyResponse.m"><span class="xref download myst">FrequencyResponse.m</span></a> to render the Bode plots.</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/48abb6f26843c1eb3b0c02ee0d198614/PlottingPoleZeros.m"><span class="xref download myst">PlottingPoleZeros.m</span></a> to render the pole-zero plots.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -454,6 +496,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-simple-complex-functions">Visualizing Simple Complex Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-complex-exponential-functions">Visualizing Complex Exponential Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-general-complex-functions">Visualizing General Complex Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-4-d-complex-functions">Visualizing 4-D Complex Functions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
