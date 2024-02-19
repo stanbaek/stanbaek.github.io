@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Stan Baek, Ph.D. &#8212; Stan Baek</title>
+    <title>Functions are Vectors? &#8212; Stan Baek</title>
   
   
   
@@ -63,11 +63,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'FunctionsAreVectors';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="No Pointers in Python?" href="NoPointer.html" />
+    <link rel="prev" title="Visualizing Complex Functions" href="ComplexFunctions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -133,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -152,8 +152,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Stan Baek, Ph.D.
                 </a>
             </li>
@@ -166,10 +166,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference external" href="https://usafa-ece.github.io/ece281-book/intro.html">ECE281 Digital Design and Computer Architecture</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Blog</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="NoPointer.html">No Pointers in Python?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ComplexFunctions.html">Visualizing Complex Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="FunctionsAreVectors.html">Functions are Vectors?</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Functions are Vectors?</a></li>
 </ul>
 
     </div>
@@ -241,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/stanbaek/stanbaek.github.io/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/stanbaek/stanbaek.github.io/issues/new?title=Issue%20on%20page%20%2FFunctionsAreVectors.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -271,7 +271,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/FunctionsAreVectors.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -340,9 +340,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -353,21 +351,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Stan Baek, Ph.D.</h1>
+    <h1>Functions are Vectors?</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typing-svg"></a><ul class="nav section-nav flex-column">
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -377,33 +365,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="stan-baek-ph-d">
-<h1>Stan Baek, Ph.D.<a class="headerlink" href="#stan-baek-ph-d" title="Permalink to this heading">#</a></h1>
-<section id="typing-svg">
-<h2><a class="reference external" href="https://stanbaek.github.io"><img alt="Typing SVG" src="https://readme-typing-svg.herokuapp.com?lines=Hello!+I+am+Stan+%F0%9F%91%8B" /></a><a class="headerlink" href="#typing-svg" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://www.usafa.edu/facultyprofile/?smid=35297"><img alt="profile" src="https://img.shields.io/badge/%F0%9F%A6%85official-profile-blue" /></a> <a class="reference external" href="https://scholar.google.com/citations?user=0Knul6gAAAAJ"><img alt="scholar" src="https://img.shields.io/badge/%F0%9F%8E%93google-scholar-green" /></a>
-<a class="reference external" href="https://www.youtube.com/user/stanbaek"><img alt="youtube" src="https://img.shields.io/badge/%F0%9F%8E%A5youtube-channel-red" /></a> <a class="reference external" href="https://www.linkedin.com/in/stanbaek/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?dfs-dfds" /></a></p>
-<a class="reference internal image-reference" href="_images/stanbaek.png"><img alt="_images/stanbaek.png" class="align-left" src="_images/stanbaek.png" style="width: 240px;" /></a>
-<p>Welcome! I am a <a class="reference external" href="https://stanbaek.github.io"><img alt="job" src="https://img.shields.io/badge/%F0%9F%A4%96robotics-professor-red" /></a> in the <a class="reference external" href="https://www.usafa.edu/department/electrical-computer-engineering">Department of Electrical and Computer Engineering</a> at the <a class="reference external" href="https://www.usafa.edu">United States Air Force Academy</a>.  I received the Bachelor’s, Master’s, and Ph.D. degrees from the Department of Electrical Engineering 💡 and Computer Sciences 💻, <a class="reference external" href="https:www.berkeley.edu">University of California, Berkeley</a>.</p>
-<p>My research ‍🔬 interests include reinforcement learning of autonomous robots under unstructured dynamic environments, intelligent behavioral control of multiple robots, robust intelligence of multiple heterogeneous unmanned vehicles for navigation, searching, and tracking of multiple targets, and intelligent consensus algorithms for multiple mobile robots. My overarching research goal is to develop new techniques to design, build, control, and optimize complex engineering systems, with particular interest in robotics, and more generally systems of collaborating intelligent elements with physical entities to form cyber-physical systems (CPS).  In the future, these systems will make enormous scientific and technical impact on robotics, military tactics, and industrial standards, to name a few.  As with my recent work in cooperative, coordinated control of multiple unmanned vehicles and autonomous flight of a small-scale ornithopter, my research in robotics has drawn heavily on the fields of multiple coordinated control, robust intelligence, machine learning, and behavioral control of multi-agent unmanned vehicles.  These vehicles included fixed-wing, rotary wing, and flapping-wing aerial vehicles as well as bio-inspired crawling and walking robots.</p>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teaching</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://stanbaek.github.io/ece487">ECE487 Advanced Robotics</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://usafa-ece.github.io/ece382/intro.html">ECE382 Embedded Computer Systems</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://stanbaek.github.io/ece387">ECE387 Introduction to Robotic Systems</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://usafa-ece.github.io/ece281-book/intro.html">ECE281 Digital Design and Computer Architecture</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Blog</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="NoPointer.html">No Pointers in Python?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ComplexFunctions.html">Visualizing Complex Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="FunctionsAreVectors.html">Functions are Vectors?</a></li>
-</ul>
-</div>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="functions-are-vectors">
+<h1>Functions are Vectors?<a class="headerlink" href="#functions-are-vectors" title="Permalink to this heading">#</a></h1>
+<p>a function space inherently constitutes a vector space. In mathematical terms, a function space encompasses a collection of functions united by a shared property. When this set of functions is endowed with the operations of addition and scalar multiplication, it forms a vector space. This implies that the set of functions adheres to the fundamental vector space axioms, including closure under addition and scalar multiplication, associativity, commutativity, and the presence of additive and multiplicative identities. Hence, it can be unequivocally asserted that a function space is, indeed, a vector space.</p>
+<p>to be continued…</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -437,14 +402,14 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="right-next"
-       href="NoPointer.html"
-       title="next page">
+    <a class="left-prev"
+       href="ComplexFunctions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">No Pointers in Python?</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Visualizing Complex Functions</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -455,22 +420,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typing-svg"></a><ul class="nav section-nav flex-column">
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
