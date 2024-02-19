@@ -18,5 +18,5 @@ parts:
   chapters:
   - file: NoPointer.ipynb
   - file: ComplexFunctions.md
-
+  - file: FunctionsAreVectors.md
   
