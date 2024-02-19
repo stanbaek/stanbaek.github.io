@@ -2,8 +2,8 @@
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=Hello!+I+am+Stan+%F0%9F%91%8B)](https://stanbaek.github.io)
 
-[![profile](https://img.shields.io/badge/🦅official-profile-blue)](https://www.usafa.edu/facultyprofile/?smid=35297) [![scholar](https://img.shields.io/badge/🎓google-scholar-green)](https://scholar.google.com/citations?user=0Knul6gAAAAJ)
-[![youtube](https://img.shields.io/badge/🎥youtube-channel-red)](https://www.youtube.com/user/stanbaek) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?dfs-dfds)](https://www.linkedin.com/in/stanbaek/) 
+[![profile](https://img.shields.io/badge/🦅official_profile-blue)](https://www.usafa.edu/facultyprofile/?smid=35297) [![scholar](https://img.shields.io/badge/🎓google_scholar-green)](https://scholar.google.com/citations?user=0Knul6gAAAAJ)
+[![youtube](https://img.shields.io/badge/🎥youtube_channel-red)](https://www.youtube.com/user/stanbaek) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stanbaek/) 
 
 
 
