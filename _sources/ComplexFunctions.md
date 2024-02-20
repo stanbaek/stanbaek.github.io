@@ -21,8 +21,7 @@ Here, the $x$-axis corresponds to the $x$ values, the $y$-axis to the real part,
 
 ## Visualizing Complex Exponential Functions
 
-Let's explore a complex exponential function given by $f(t)=e^{j\theta}$. This function represents a collection of points on the unit circle. As the parameter 
-$\theta$ increases, the complex function $f(\theta)$ traces a counterclockwise path from 1 and completes a full revolution, returning to 1 with each period. 
+Let's explore a complex exponential function given by $f(t)=e^{j\theta}$. Initially, this function is often visualized as a trajectory of points on the unit circle. As the parameter $\theta$ varies, the complex function $f(\theta)$ traces a counterclockwise path from 1, completing a full revolution and returning to 1 with each period.
 
 ```{image} ./figures/comp_exp.png
 :width: 360
@@ -30,7 +29,10 @@ $\theta$ increases, the complex function $f(\theta)$ traces a counterclockwise p
 ```
 <br>
 
-Nevertheless, it isn't merely a unit circle. In reality, it takes the form of a helix, where its central axis aligns with $\theta$. It is evident that concerning $\theta$, the real axis corresponds to $\cos\theta$, and the imaginary axis corresponds to $\sin\theta$, as expressed in Euler's identity: $e^{j\theta} = \cos\theta + j\sin\theta$.
+However, the complexity of this representation goes beyond a mere unit circle. In reality, the trajectory takes the form of a helix, with its central axis aligned with the variable $\theta$. This intricate structure unfolds when we examine the relationship between $\theta$ and the real and imaginary axes.
+
+In the context of $\theta$, the real axis corresponds to $\cos\theta$, and the imaginary axis corresponds to $\sin\theta$, elegantly expressed in Euler's formula: $e^{j\theta} = \cos\theta + j\sin\theta$. The figure below vividly demonstrates the projection of $\cos\theta$ when the real part is plotted against $\theta$ and similarly captures $\sin\theta$ when the imaginary part is plotted.
+
 
 ```{image} ./figures/comp_exponential.gif
 :width: 360
@@ -38,7 +40,7 @@ Nevertheless, it isn't merely a unit circle. In reality, it takes the form of a 
 ```
 <br>
 
-Now, contemplate two complex exponential functions with distinct frequencies: $e^{j2\pi t}$ and $e^{j3\pi t}$. When visualized in the complex plane with both real and imaginary axes, the two functions coincide, making it challenging to differentiate between them, as illustrated below.
+Now, let's consider two complex exponential functions with distinct frequencies: $e^{j2\pi t}$ and $e^{j3\pi t}$. When visualized in the complex plane with both real and imaginary axes, the two functions coincide, making it challenging to differentiate between them, as illustrated below.
 
 ```{image} ./figures/comp_exp2.png
 :width: 420
@@ -46,13 +48,15 @@ Now, contemplate two complex exponential functions with distinct frequencies: $e
 ```
 <br>
 
-In three-dimensional space, the distinction between the two helixes becomes apparent. The two complex exponential functions are orthogonal to each other, signifying their lack of correlation. This distinction is evident when observing their real and imaginary parts, as depicted below.
+The challenge dissolves when we transition into three-dimensional space, where the distinction between the two helixes becomes apparent. The orthogonal orientation of the two complex exponential functions signifies their lack of correlation. This distinction is clearly observable when examining their real and imaginary parts, as depicted in the dynamic visualization below.
 
 ```{image} ./figures/comp_exponential2.gif
 :width: 420
 :align: center
 ```
 <br>
+
+This multi-dimensional perspective provides a more profound understanding of the behavior of complex exponential functions, emphasizing their intricate geometry and the significance of frequency in their representation.
 
 ## Visualizing General Complex Functions
 
