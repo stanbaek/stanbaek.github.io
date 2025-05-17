@@ -11,7 +11,9 @@ parts:
   - url: https://usafa-ece.github.io/ece382/intro.html
     title: ECE382 Embedded Computer Systems
   - url: https://stanbaek.github.io/ece387
-    title: ECE387 Introduction to Robotic Systems
+    title: ECE387 Intro to Robotic Systems
+  - url: https://stanbaek.github.io/ece346
+    title: ECE346 Engineering Math
   - url: https://usafa-ece.github.io/ece281-book/intro.html
     title: ECE281 Digital Design and Computer Architecture
 - caption: Blog
