@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Visualizing Complex Functions &#8212; Stan Baek</title>
   
@@ -15,58 +14,55 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script src="_static/tabs.js"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ComplexFunctions';</script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="No Pointers in Python?" href="NoPointer.html" />
@@ -79,19 +75,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -113,12 +113,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -133,9 +141,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -145,12 +157,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/robot.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/robot.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/robot.png" class="logo__image only-light" alt="Stan Baek - Home"/>
+    <script>document.write(`<img src="_static/robot.png" class="logo__image only-dark" alt="Stan Baek - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -164,7 +187,8 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference external" href="https://stanbaek.github.io/ece487">ECE487 Advanced Robotics</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://usafa-ece.github.io/ece382/intro.html">ECE382 Embedded Computer Systems</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://stanbaek.github.io/ece387">ECE387 Introduction to Robotic Systems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://stanbaek.github.io/ece387">ECE387 Intro to Robotic Systems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://stanbaek.github.io/ece346">ECE346 Engineering Math</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://usafa-ece.github.io/ece281-book/intro.html">ECE281 Digital Design and Computer Architecture</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Blog</span></p>
@@ -186,7 +210,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -195,14 +219,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -324,26 +348,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -377,66 +403,78 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="visualizing-complex-functions">
-<h1>Visualizing Complex Functions<a class="headerlink" href="#visualizing-complex-functions" title="Permalink to this heading">#</a></h1>
+<h1>Visualizing Complex Functions<a class="headerlink" href="#visualizing-complex-functions" title="Link to this heading">#</a></h1>
 <section id="visualizing-simple-complex-functions">
-<h2>Visualizing Simple Complex Functions<a class="headerlink" href="#visualizing-simple-complex-functions" title="Permalink to this heading">#</a></h2>
+<h2>Visualizing Simple Complex Functions<a class="headerlink" href="#visualizing-simple-complex-functions" title="Link to this heading">#</a></h2>
 <p>What is the domain and range of <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>? It’s likely that your high school math teacher emphasized that both the domain and range comprise positive real numbers, as illustrated in the plot below:</p>
-<a class="reference internal image-reference" href="_images/sqrt_x_real.png"><img alt="_images/sqrt_x_real.png" class="align-center" src="_images/sqrt_x_real.png" style="width: 360px;" /></a>
+<a class="reference internal image-reference" href="_images/sqrt_x_real.png"><img alt="_images/sqrt_x_real.png" class="align-center" src="_images/sqrt_x_real.png" style="width: 360px;" />
+</a>
 <p>For engineering students, it’s well-known that <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> becomes a complex number when <span class="math notranslate nohighlight">\(x\)</span> is negative. Consequently, the domain extends across all real numbers, denoted as <span class="math notranslate nohighlight">\((-\infty, \infty)\)</span>, and the range encompasses complex numbers, represented as <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>. Now, let’s explore the visualization of <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>. As you’re aware, complex numbers can be portrayed in two-dimensional space, where the real part aligns with the <span class="math notranslate nohighlight">\(x\)</span>-axis, and the imaginary part aligns with the <span class="math notranslate nohighlight">\(y\)</span>-axis.</p>
 <p>Given this, how would you graph <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span>? Complex functions need a 3-dimensional representation, as depicted below:</p>
-<a class="reference internal image-reference" href="_images/sqrt_x_3d.gif"><img alt="_images/sqrt_x_3d.gif" class="align-center" src="_images/sqrt_x_3d.gif" style="width: 360px;" /></a>
+<a class="reference internal image-reference" href="_images/sqrt_x_3d.gif"><img alt="_images/sqrt_x_3d.gif" class="align-center" src="_images/sqrt_x_3d.gif" style="width: 360px;" />
+</a>
 <p>Here, the <span class="math notranslate nohighlight">\(x\)</span>-axis corresponds to the <span class="math notranslate nohighlight">\(x\)</span> values, the <span class="math notranslate nohighlight">\(y\)</span>-axis to the real part, and the <span class="math notranslate nohighlight">\(z\)</span>-axis to the imaginary part. Notably, when <span class="math notranslate nohighlight">\(x\)</span> is positive, <span class="math notranslate nohighlight">\(f(x)\)</span> is always real, while when <span class="math notranslate nohighlight">\(x\)</span> is negative, <span class="math notranslate nohighlight">\(f(x)\)</span> is consistently imaginary. This distinction adds a layer of understanding to the behavior of the complex function across different domains.</p>
 </section>
 <section id="visualizing-complex-exponential-functions">
-<h2>Visualizing Complex Exponential Functions<a class="headerlink" href="#visualizing-complex-exponential-functions" title="Permalink to this heading">#</a></h2>
+<h2>Visualizing Complex Exponential Functions<a class="headerlink" href="#visualizing-complex-exponential-functions" title="Link to this heading">#</a></h2>
 <p>Let’s explore a complex exponential function given by <span class="math notranslate nohighlight">\(f(t)=e^{j\theta}\)</span>. Initially, this function is often visualized as a trajectory of points on the unit circle. As the parameter <span class="math notranslate nohighlight">\(\theta\)</span> varies, the complex function <span class="math notranslate nohighlight">\(f(\theta)\)</span> traces a counterclockwise path from 1, completing a full revolution and returning to 1 with each period.</p>
-<a class="reference internal image-reference" href="_images/comp_exp.png"><img alt="_images/comp_exp.png" class="align-center" src="_images/comp_exp.png" style="width: 360px;" /></a>
+<a class="reference internal image-reference" href="_images/comp_exp.png"><img alt="_images/comp_exp.png" class="align-center" src="_images/comp_exp.png" style="width: 360px;" />
+</a>
 <br>
 <p>However, the complexity of this representation goes beyond a mere unit circle. In reality, the trajectory takes the form of a helix, with its central axis aligned with the variable <span class="math notranslate nohighlight">\(\theta\)</span>. This intricate structure unfolds when we examine the relationship between <span class="math notranslate nohighlight">\(\theta\)</span> and the real and imaginary axes.</p>
 <p>In the context of <span class="math notranslate nohighlight">\(\theta\)</span>, the real axis corresponds to <span class="math notranslate nohighlight">\(\cos\theta\)</span>, and the imaginary axis corresponds to <span class="math notranslate nohighlight">\(\sin\theta\)</span>, elegantly expressed in Euler’s formula: <span class="math notranslate nohighlight">\(e^{j\theta} = \cos\theta + j\sin\theta\)</span>. The figure below vividly demonstrates the projection of <span class="math notranslate nohighlight">\(\cos\theta\)</span> when the real part is plotted against <span class="math notranslate nohighlight">\(\theta\)</span> and similarly captures <span class="math notranslate nohighlight">\(\sin\theta\)</span> when the imaginary part is plotted.</p>
-<a class="reference internal image-reference" href="_images/comp_exponential.gif"><img alt="_images/comp_exponential.gif" class="align-center" src="_images/comp_exponential.gif" style="width: 360px;" /></a>
+<a class="reference internal image-reference" href="_images/comp_exponential.gif"><img alt="_images/comp_exponential.gif" class="align-center" src="_images/comp_exponential.gif" style="width: 360px;" />
+</a>
 <br>
 <p>Now, let’s consider two complex exponential functions with distinct frequencies: <span class="math notranslate nohighlight">\(e^{j2\pi t}\)</span> and <span class="math notranslate nohighlight">\(e^{j3\pi t}\)</span>. When visualized in the complex plane with both real and imaginary axes, the two functions coincide, making it challenging to differentiate between them, as illustrated below.</p>
-<a class="reference internal image-reference" href="_images/comp_exp2.png"><img alt="_images/comp_exp2.png" class="align-center" src="_images/comp_exp2.png" style="width: 420px;" /></a>
+<a class="reference internal image-reference" href="_images/comp_exp2.png"><img alt="_images/comp_exp2.png" class="align-center" src="_images/comp_exp2.png" style="width: 420px;" />
+</a>
 <br>
 <p>The challenge dissolves when we transition into three-dimensional space, where the distinction between the two helixes becomes apparent. The orthogonal orientation of the two complex exponential functions signifies their lack of correlation. This distinction is clearly observable when examining their real and imaginary parts, as depicted in the dynamic visualization below.</p>
-<a class="reference internal image-reference" href="_images/comp_exponential2.gif"><img alt="_images/comp_exponential2.gif" class="align-center" src="_images/comp_exponential2.gif" style="width: 420px;" /></a>
+<a class="reference internal image-reference" href="_images/comp_exponential2.gif"><img alt="_images/comp_exponential2.gif" class="align-center" src="_images/comp_exponential2.gif" style="width: 420px;" />
+</a>
 <br>
 <p>This multi-dimensional perspective provides a more profound understanding of the behavior of complex exponential functions, emphasizing their intricate geometry and the significance of frequency in their representation.</p>
 </section>
 <section id="visualizing-general-complex-functions">
-<h2>Visualizing General Complex Functions<a class="headerlink" href="#visualizing-general-complex-functions" title="Permalink to this heading">#</a></h2>
+<h2>Visualizing General Complex Functions<a class="headerlink" href="#visualizing-general-complex-functions" title="Link to this heading">#</a></h2>
 <p>Up to this point, our focus has been on unit complex exponential functions. Now, let’s turn our attention to a general complex function, particularly</p>
 <div class="math notranslate nohighlight">
 \[ H(\omega) = \frac{13}{13-\omega^2 + j4\omega}\]</div>
 <p>In contrast to the unit complex exponential functions discussed earlier, the magnitude and phase of general complex functions do not demonstrate linear changes with varying frequencies. As depicted in the figure below, interpreting the trends of the curves becomes challenging, even in a 3-dimensional plot.</p>
-<a class="reference internal image-reference" href="_images/bode_3d.gif"><img alt="_images/bode_3d.gif" class="align-center" src="_images/bode_3d.gif" style="width: 420px;" /></a>
+<a class="reference internal image-reference" href="_images/bode_3d.gif"><img alt="_images/bode_3d.gif" class="align-center" src="_images/bode_3d.gif" style="width: 420px;" />
+</a>
 <br>
 <p>A widely embraced strategy to enhance the analysis of complex functions involves decoupling the magnitude and phase components. This separation leads to the creation of two distinct 2-dimensional plots: one showcasing the magnitude, <span class="math notranslate nohighlight">\(|H(\omega)|\)</span>, and the other illustrating the phase, <span class="math notranslate nohighlight">\(\angle H(\omega)\)</span>, with respect to varying frequencies, as visually represented below.</p>
-<a class="reference internal image-reference" href="_images/bode_linear.png"><img alt="_images/bode_linear.png" class="align-center" src="_images/bode_linear.png" style="width: 420px;" /></a>
+<a class="reference internal image-reference" href="_images/bode_linear.png"><img alt="_images/bode_linear.png" class="align-center" src="_images/bode_linear.png" style="width: 420px;" />
+</a>
 <br>
 <p>These graphical representations are collectively known as <strong>Bode plots</strong>. It’s important to recognize that, a century ago, Bode did not have access to the advanced 3-D rendering tools available today, and consequently, they relied on 2-dimensional visualization.</p>
 <p>The Bode plot stands as an invaluable instrument for comprehending a system’s response across various frequencies. When employing a logarithmic scale, the Bode plot takes the form illustrated in the figure below:</p>
-<a class="reference internal image-reference" href="_images/bode_log.png"><img alt="_images/bode_log.png" class="align-center" src="_images/bode_log.png" style="width: 420px;" /></a>
+<a class="reference internal image-reference" href="_images/bode_log.png"><img alt="_images/bode_log.png" class="align-center" src="_images/bode_log.png" style="width: 420px;" />
+</a>
 <br>
 <p>Additionally, when examining the 3-dimensional plot in the real-imaginary plane, it transforms into what is known as the Nyquist plot:</p>
-<a class="reference internal image-reference" href="_images/nyquist.png"><img alt="_images/nyquist.png" class="align-center" src="_images/nyquist.png" style="width: 420px;" /></a>
+<a class="reference internal image-reference" href="_images/nyquist.png"><img alt="_images/nyquist.png" class="align-center" src="_images/nyquist.png" style="width: 420px;" />
+</a>
 <br>
 <p>The Nyquist plot, being a parametric representation of a frequency response, finds extensive use in the fields of automatic control and signal processing. It provides valuable insights into the stability and behavior of dynamic systems, making it a crucial tool for engineers and researchers.</p>
 </section>
 <section id="visualizing-4-d-complex-functions">
-<h2>Visualizing 4-D Complex Functions<a class="headerlink" href="#visualizing-4-d-complex-functions" title="Permalink to this heading">#</a></h2>
+<h2>Visualizing 4-D Complex Functions<a class="headerlink" href="#visualizing-4-d-complex-functions" title="Link to this heading">#</a></h2>
 <p>Until now, our exploration has centered on complex functions with a real domain (<span class="math notranslate nohighlight">\(\mathbb{R}\)</span>) and a complex range (<span class="math notranslate nohighlight">\(\mathbb{C}\)</span>). Let’s now delve into complex functions with both a complex domain (<span class="math notranslate nohighlight">\(\mathbb{C}\)</span>) and a complex range (<span class="math notranslate nohighlight">\(\mathbb{C}\)</span>). Specifically, we will examine the transfer function characterized by the expression:</p>
 <div class="math notranslate nohighlight">
 \[ H(s) = \frac{s+2}{s^2+2s+s}\]</div>
 <p>Here, <span class="math notranslate nohighlight">\(s=\sigma+j\omega\)</span> represents a complex number, introducing two variables for the domain and two for the range. Attempting to visualize this function in 3-dimensional space becomes impractical due to the involvement of four independent variables in transfer functions. Consequently, we need to decouple the magnitude and phase components, represented as <span class="math notranslate nohighlight">\(|H(s)|\)</span> and <span class="math notranslate nohighlight">\(\angle H(s)\)</span>, respectively. Although the domain of each component remains complex (<span class="math notranslate nohighlight">\(\mathbb{C}\)</span>), the range is now real (<span class="math notranslate nohighlight">\(\mathbb{R}\)</span>). The magnitude response, <span class="math notranslate nohighlight">\(|H(s)|\)</span>, is commonly referred to as the pole-zero map, often depicted in 2-dimensional space, as shown below.</p>
-<a class="reference internal image-reference" href="_images/pzplot.png"><img alt="_images/pzplot.png" class="align-center" src="_images/pzplot.png" style="width: 420px;" /></a>
+<a class="reference internal image-reference" href="_images/pzplot.png"><img alt="_images/pzplot.png" class="align-center" src="_images/pzplot.png" style="width: 420px;" />
+</a>
 <br>
 <p>This representation provides a more manageable visualization, offering valuable insights into the behavior of the complex function across various frequencies and complex values of <span class="math notranslate nohighlight">\(s\)</span>. It’s important to note that this 2-dimensional portrayal is a simplified representation for its corresponding 3-dimensional plot, as depicted below:</p>
-<a class="reference internal image-reference" href="_images/pzplot_3d.gif"><img alt="_images/pzplot_3d.gif" class="align-center" src="_images/pzplot_3d.gif" style="width: 420px;" /></a>
+<a class="reference internal image-reference" href="_images/pzplot_3d.gif"><img alt="_images/pzplot_3d.gif" class="align-center" src="_images/pzplot_3d.gif" style="width: 420px;" />
+</a>
 <br>
 <p>Crucially, the transfer function assumes the role of the frequency response of a system when the real part of <span class="math notranslate nohighlight">\(s\)</span> is set to zero, i.e., <span class="math notranslate nohighlight">\(s=j\omega\)</span> or <span class="math notranslate nohighlight">\(s|_{\sigma=0}=j\omega\)</span>. Thus, the red line along the imaginary axis in the 3-D plot represents the frequency response of the system, i.e., <span class="math notranslate nohighlight">\(H(s)|_{s=j\omega}=H(j\omega)\)</span>. This insight enhances our understanding of the system’s characteristics across different frequencies.</p>
 <p>Download the MATLAB files to generate the plots used on this page:</p>
@@ -473,11 +511,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="NoPointer.html"
@@ -488,10 +525,7 @@ document.write(`
         <p class="prev-next-title">No Pointers in Python?</p>
       </div>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -499,6 +533,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -531,6 +566,7 @@ By Stan Baek
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2024.
@@ -557,8 +593,8 @@ By Stan Baek
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
