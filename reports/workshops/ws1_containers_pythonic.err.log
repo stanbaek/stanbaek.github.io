@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "c:\Users\stanbaek\git\books\.venv\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "c:\Users\stanbaek\git\books\.venv\Lib\site-packages\nbclient\client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\stanbaek\git\books\.venv\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\stanbaek\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\stanbaek\git\books\.venv\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "c:\Users\stanbaek\git\books\.venv\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "c:\Users\stanbaek\git\books\.venv\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+hand = input("What would you like to play? ")
+if hand == "Rock":
+    print("It is a valid play.")
+elif hand == "Paper":
+    print("It is a valid play.")
+elif hand == "Sciccors":
+    print("It is a valid play.")
+else:    
+    print("It is an invalid play.")
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mStdinNotImplementedError[39m                  Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[34][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m hand = [38;5;28;43minput[39;49m[43m([49m[33;43m"[39;49m[33;43mWhat would you like to play? [39;49m[33;43m"[39;49m[43m)[49m
+[32m      2[39m [38;5;28;01mif[39;00m hand == [33m"[39m[33mRock[39m[33m"[39m:
+[32m      3[39m     [38;5;28mprint[39m([33m"[39m[33mIt is a valid play.[39m[33m"[39m)
+
+[36mFile [39m[32mc:\Users\stanbaek\git\books\.venv\Lib\site-packages\ipykernel\kernelbase.py:1281[39m, in [36mKernel.raw_input[39m[34m(self, prompt)[39m
+[32m   1279[39m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m [38;5;28mself[39m._allow_stdin:
+[32m   1280[39m     msg = [33m"[39m[33mraw_input was called, but this frontend does not support input requests.[39m[33m"[39m
+[32m-> [39m[32m1281[39m     [38;5;28;01mraise[39;00m StdinNotImplementedError(msg)
+[32m   1282[39m [38;5;28;01mreturn[39;00m [38;5;28mself[39m._input_request(
+[32m   1283[39m     [38;5;28mstr[39m(prompt),
+[32m   1284[39m     [38;5;28mself[39m._parent_ident[[33m"[39m[33mshell[39m[33m"[39m],
+[32m   1285[39m     [38;5;28mself[39m.get_parent([33m"[39m[33mshell[39m[33m"[39m),
+[32m   1286[39m     password=[38;5;28;01mFalse[39;00m,
+[32m   1287[39m )
+
+[31mStdinNotImplementedError[39m: raw_input was called, but this frontend does not support input requests.
+
