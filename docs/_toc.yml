@@ -20,4 +20,10 @@ parts:
   chapters:
   - file: NoPointer.ipynb
   - file: ComplexFunctions.md
-  
+- caption: Python Workshops
+  chapters:
+  - file: workshops/PythonBasic.md
+  - file: workshops/PythonIntermediate.ipynb
+  - file: workshops/NumPy.md
+
+
