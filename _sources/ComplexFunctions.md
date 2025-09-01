@@ -21,7 +21,7 @@ Here, the $x$-axis corresponds to the $x$ values, the $y$-axis to the real part,
 
 ## Visualizing Complex Exponential Functions
 
-Let's explore a complex exponential function given by $f(t)=e^{j\theta}$. Initially, this function is often visualized as a trajectory of points on the unit circle. As the parameter $\theta$ varies, the complex function $f(\theta)$ traces a counterclockwise path from 1, completing a full revolution and returning to 1 with each period.
+Let's explore a complex exponential function given by $f(\theta)=e^{j\theta}$. Initially, this function is often visualized as a trajectory of points on the unit circle. As the parameter $\theta$ varies, the complex function $f(\theta)$ traces a counterclockwise path from 1, completing a full revolution and returning to 1 with each period.
 
 ```{image} ./figures/comp_exp.png
 :width: 360
