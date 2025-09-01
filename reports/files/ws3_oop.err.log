@@ -72,7 +72,7 @@ len(grade_records), len(sensor_samples)
 ------------------
 
 
-  [36mCell[39m[36m [39m[32mIn[47][39m[32m, line 17[39m
+  [36mCell[39m[36m [39m[32mIn[4][39m[32m, line 17[39m
 [31m    [39m[31mf.write("name,exam1,exam2,exam3[39m
             ^
 [31mSyntaxError[39m[31m:[39m unterminated string literal (detected at line 17)

@@ -1,0 +1,968 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>🐍 Python Intermediate &#8212; Stan Baek</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'files/PythonIntermediate';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/robot.png" class="logo__image only-light" alt="Stan Baek - Home"/>
+    <script>document.write(`<img src="../_static/robot.png" class="logo__image only-dark" alt="Stan Baek - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Stan Baek, Ph.D.
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Teaching</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://stanbaek.github.io/ece487">ECE487 Advanced Robotics</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://usafa-ece.github.io/ece382/intro.html">ECE382 Embedded Computer Systems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://stanbaek.github.io/ece387">ECE387 Intro to Robotic Systems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://usafa-ece.github.io/ece346/intro.html">ECE346 Engineering Math</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://usafa-ece.github.io/ece281-book/intro.html">ECE281 Digital Design and Computer Architecture</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Blog</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../NoPointer.html">No Pointers in Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ComplexFunctions.html">Visualizing Complex Functions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Python Workshops</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../workshops/PythonIntermediate.html">🐍 Workshop 1 — Python Containers &amp; Idiomatic Python</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/stanbaek/stanbaek.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/stanbaek/stanbaek.github.io/issues/new?title=Issue%20on%20page%20%2Ffiles/PythonIntermediate.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/files/PythonIntermediate.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>🐍 Python Intermediate</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-formatting">String Formatting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pythonic-coding">Pythonic Coding</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-list-comprehensions">Example: List Comprehensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-conditional-statements">Simplifying Conditional Statements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ternary-operator">Ternary Operator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-through-multiple-lists">Iterating Through Multiple Lists</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-data-containers">Python Data Containers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="python-intermediate">
+<h1>🐍 Python Intermediate<a class="headerlink" href="#python-intermediate" title="Link to this heading">#</a></h1>
+<section id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h2>
+<p>This tutorial introduces Pythonic coding practices and key Python data containers such as strings, lists, tuples, and dictionaries.</p>
+<p>Reference: D. Beazley, <em>Python Essential Reference</em>, 4th ed, Addison Wesley, 2009</p>
+</section>
+<section id="string-formatting">
+<h2>String Formatting<a class="headerlink" href="#string-formatting" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Python offers multiple ways to format strings. Here are some common methods:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;The legendary pirate captain&quot;</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mf">726.25</span>
+
+<span class="c1"># method 1: (formatted-string)%(values)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> is </span><span class="si">%f</span><span class="s2"> years old.&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>     <span class="c1"># print a string and a floating point</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> is </span><span class="si">%.4f</span><span class="s2"> years old.&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>   <span class="c1"># 4 decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> is </span><span class="si">%10.4f</span><span class="s2"> years old.&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span> <span class="c1"># allocate 10 spaces</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> is </span><span class="si">%d</span><span class="s2"> years old.&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>     <span class="c1"># print it as integer</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> is </span><span class="si">%10d</span><span class="s2"> years old.&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>   <span class="c1"># allocate 10 spaces</span>
+
+<span class="c1"># method 2: (formatted-string).format(values)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is </span><span class="si">{}</span><span class="s2"> years old.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is </span><span class="si">{:0.4f}</span><span class="s2"> years old.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is </span><span class="si">{:10.4f}</span><span class="s2"> years old.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>
+
+<span class="c1"># method 3: f(formatted-string with values)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">age</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> years old.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">age</span><span class="si">:</span><span class="s2">10.4f</span><span class="si">}</span><span class="s2"> years old.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span> <span class="mf">726.250000</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span> <span class="mf">726.2500</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span>   <span class="mf">726.2500</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span> <span class="mi">726</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span>        <span class="mi">726</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span> <span class="mf">726.25</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span> <span class="mf">726.2500</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span>   <span class="mf">726.2500</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span> <span class="mf">726.25</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span> <span class="mf">726.2500</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span>   <span class="mf">726.2500</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="pythonic-coding">
+<h2>Pythonic Coding<a class="headerlink" href="#pythonic-coding" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">&quot;Pythonic&quot;</span></code> refers to writing code in a way that is idiomatic and aligns with the principles and style of the Python programming language. It emphasizes readability, simplicity, and elegance, often leveraging Python’s unique features and conventions.</p>
+<section id="example-list-comprehensions">
+<h3>Example: List Comprehensions<a class="headerlink" href="#example-list-comprehensions" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Non-Pythonic:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">squares</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">squares</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Pythonic:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="simplifying-conditional-statements">
+<h3>Simplifying Conditional Statements<a class="headerlink" href="#simplifying-conditional-statements" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Consider the following code:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">hand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to play? &quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">hand</span> <span class="o">==</span> <span class="s2">&quot;Rock&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play.&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">hand</span> <span class="o">==</span> <span class="s2">&quot;Paper&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play.&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">hand</span> <span class="o">==</span> <span class="s2">&quot;Sciccors&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is an invalid play.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>This code can be simplified by</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">hand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to play? &quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">hand</span> <span class="o">==</span> <span class="s2">&quot;Rock&quot;</span> <span class="ow">or</span> <span class="n">hand</span> <span class="o">==</span> <span class="s2">&quot;Paper&quot;</span> <span class="ow">or</span> <span class="n">hand</span> <span class="o">==</span> <span class="s2">&quot;Sciccors&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is an invalid play&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>This code can be further simplified using Python’s <code class="docutils literal notranslate"><span class="pre">in</span></code> keyword:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">hand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to play? &quot;</span><span class="p">)</span>  <span class="c1"># This is Pythonic</span>
+<span class="k">if</span> <span class="n">hand</span> <span class="ow">in</span>  <span class="p">(</span><span class="s2">&quot;Rock&quot;</span><span class="p">,</span> <span class="s2">&quot;Paper&quot;</span><span class="p">,</span> <span class="s2">&quot;Scissors&quot;</span><span class="p">):</span>  
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is an invalid play&quot;</span><span class="p">)</span>    
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="ternary-operator">
+<h3>Ternary Operator<a class="headerlink" href="#ternary-operator" title="Link to this heading">#</a></h3>
+<p>The ternary operator allows concise conditional assignments:</p>
+<ol class="arabic">
+<li><p>Consider the following code:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>The code can be simplified using <code class="docutils literal notranslate"><span class="pre">Pythonic</span></code> by</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span>  <span class="c1"># This is Pythonic</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="loops">
+<h3>Loops<a class="headerlink" href="#loops" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>If you would like to use index in a loop:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># indexing using for loops</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Peter Parker&#39;</span><span class="p">,</span> <span class="s1">&#39;Clark Kent&#39;</span><span class="p">,</span> <span class="s1">&#39;Wade Wilson&#39;</span><span class="p">,</span> <span class="s1">&#39;Bruce Wayne&#39;</span><span class="p">,</span> <span class="s1">&#39;Dr. Baek&#39;</span><span class="p">]</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+<li><p>This will print</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="n">Peter</span> <span class="n">Parker</span>
+<span class="mi">1</span> <span class="n">Clark</span> <span class="n">Kent</span>
+<span class="mi">2</span> <span class="n">Wade</span> <span class="n">Wilson</span>
+<span class="mi">3</span> <span class="n">Bruce</span> <span class="n">Wayne</span>
+<span class="mi">4</span> <span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span>
+</pre></div>
+</div>
+</li>
+<li><p>You can also use <code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> for more <code class="docutils literal notranslate"><span class="pre">Pythonic</span></code> code:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Peter Parker&#39;</span><span class="p">,</span> <span class="s1">&#39;Clark Kent&#39;</span><span class="p">,</span> <span class="s1">&#39;Wade Wilson&#39;</span><span class="p">,</span> <span class="s1">&#39;Bruce Wayne&#39;</span><span class="p">,</span> <span class="s1">&#39;Dr. Baek&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>This will print the same.</p></li>
+<li><p>You can also start the index from 1:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Peter Parker&#39;</span><span class="p">,</span> <span class="s1">&#39;Clark Kent&#39;</span><span class="p">,</span> <span class="s1">&#39;Wade Wilson&#39;</span><span class="p">,</span> <span class="s1">&#39;Bruce Wayne&#39;</span><span class="p">,</span> <span class="s1">&#39;Dr. Baek&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>This will print</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="n">Peter</span> <span class="n">Parker</span>
+<span class="mi">2</span> <span class="n">Clark</span> <span class="n">Kent</span>
+<span class="mi">3</span> <span class="n">Wade</span> <span class="n">Wilson</span>
+<span class="mi">4</span> <span class="n">Bruce</span> <span class="n">Wayne</span>
+<span class="mi">5</span> <span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="iterating-through-multiple-lists">
+<h3>Iterating Through Multiple Lists<a class="headerlink" href="#iterating-through-multiple-lists" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>You can iterate through multiple lists:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">heroes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Spiderman&#39;</span><span class="p">,</span> <span class="s1">&#39;Superman&#39;</span><span class="p">,</span> <span class="s1">&#39;Deadpool&#39;</span><span class="p">,</span> <span class="s1">&#39;Batman&#39;</span><span class="p">,</span> <span class="s1">&#39;Pirate Captain&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
+    <span class="n">hero</span> <span class="o">=</span> <span class="n">heroes</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1"> is actually </span><span class="si">{</span><span class="n">hero</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>It will print</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Peter</span> <span class="n">Parker</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Spiderman</span>
+<span class="n">Clark</span> <span class="n">Kent</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Superman</span>
+<span class="n">Wade</span> <span class="n">Wilson</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Deadpool</span>
+<span class="n">Bruce</span> <span class="n">Wayne</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Batman</span>
+<span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Pirate</span> <span class="n">Captain</span>
+</pre></div>
+</div>
+</li>
+<li><p>You can the <code class="docutils literal notranslate"><span class="pre">Pythonic</span></code> style to iterate through multiple lists using <code class="docutils literal notranslate"><span class="pre">zip()</span></code>:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pythonic with zip</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">hero</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">heroes</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1"> is actually </span><span class="si">{</span><span class="n">hero</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>This will print the same.</p></li>
+<li><p>Another example:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">universes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Marvel&#39;</span><span class="p">,</span> <span class="s1">&#39;DC&#39;</span><span class="p">,</span> <span class="s1">&#39;Marvel&#39;</span><span class="p">,</span> <span class="s1">&#39;DC&#39;</span><span class="p">,</span> <span class="s1">&#39;USAFA&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">hero</span><span class="p">,</span> <span class="n">universe</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">heroes</span><span class="p">,</span> <span class="n">universes</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1"> is actually </span><span class="si">{</span><span class="n">hero</span><span class="si">}</span><span class="s1"> from </span><span class="si">{</span><span class="n">universe</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>This will print</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Peter</span> <span class="n">Parker</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Spiderman</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Marvel</span>
+<span class="n">Clark</span> <span class="n">Kent</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Superman</span> <span class="kn">from</span><span class="w"> </span><span class="nn">DC</span>
+<span class="n">Wade</span> <span class="n">Wilson</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Deadpool</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Marvel</span>
+<span class="n">Bruce</span> <span class="n">Wayne</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Batman</span> <span class="kn">from</span><span class="w"> </span><span class="nn">DC</span>
+<span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Pirate</span> <span class="n">Captain</span> <span class="kn">from</span><span class="w"> </span><span class="nn">USAFA</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+</section>
+<section id="python-data-containers">
+<h2>Python Data Containers<a class="headerlink" href="#python-data-containers" title="Link to this heading">#</a></h2>
+<section id="strings">
+<h3>Strings<a class="headerlink" href="#strings" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Strings are created by enclosing characters in single, double, or triple quotes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hellow World&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;Python is groovy&#39;</span>
+<span class="n">c</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Computer says &#39;No&#39;&quot;&quot;&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>The same type of quote used to start a string must be used to terminate it.  Triple-quoted strings capture all the text that appears prior to the terminating triple quote, as opposed to single- and double-quoted strings, which must be  specified on one logical line.  Triple-quoted strings are useful when the contents of a string literal span multiple lines of text such as the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;Content-type: text/html</span>
+
+<span class="s1">&lt;h1&gt; Hello World &lt;/h1&gt;</span>
+<span class="s1">Click &lt;a href=&quot;http://www.python.org&quot;&gt;here&lt;/a&gt;.</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Strings are stored as sequences of characters indexed by integers starting at zero</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>   <span class="c1"># First character</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>  <span class="c1"># Slice: &#39;Hello&#39;  </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">:])</span>  <span class="c1"># Slice: &#39;World&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">8</span><span class="p">])</span> <span class="c1"># Slice: &#39;lo Wo&#39; </span>
+</pre></div>
+</div>
+</li>
+<li><p>Try this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;37&quot;</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;42&quot;</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="c1"># what does this print?  why?</span>
+<span class="n">z</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">+</span><span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>  <span class="c1"># what does this print?</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="lists">
+<h3>Lists<a class="headerlink" href="#lists" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Lists are <code class="docutils literal notranslate"><span class="pre">mutable</span></code> sequences of objects, created with square brackets:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Dave&quot;</span><span class="p">,</span> <span class="s2">&quot;Mark&quot;</span><span class="p">,</span> <span class="s2">&quot;Ann&quot;</span><span class="p">,</span> <span class="s2">&quot;Phil&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Lists are indexed by integers, starting with zero. Use the indexing operator to access and modify individual items of the list:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Jeff&quot;</span>
+<span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Paula&quot;</span><span class="p">)</span>
+<span class="n">names</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;Thomas&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Lists can be sliced and concatenated using:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">stop</span><span class="p">:</span><span class="n">stride</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>For example,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="n">names</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Jeff&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+<span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Dave&#39;</span><span class="p">,</span> <span class="s1">&#39;Mark&#39;</span><span class="p">,</span> <span class="s1">&#39;Jeff&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Use the plus <code class="docutils literal notranslate"><span class="pre">+</span></code> operator to concatenate lists:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">+</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>An empty list can be created by one of two ways</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+<span class="n">names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Lists can contain any kind of Python object, including other lists, as in the following example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Dave&quot;</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Mark&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">101</span><span class="p">]],</span> <span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>Items contained in nested lists are accessed by applying more than one indexing operation, as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</li>
+<li><p>Objects can be inserted and appended to a list.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># List methods (insert)</span>
+<span class="n">list_b</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;python&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_b</span><span class="p">)</span>
+<span class="c1"># List methods (append)</span>
+<span class="n">list_b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_b</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="tuples">
+<h3>Tuples<a class="headerlink" href="#tuples" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>To create simple data structures, you can pack a collection of values together into a single object using a <em>tuple</em>. You can create a tuple by enclosing group of values in parentheses like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stock</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;GOOG&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">490.10</span><span class="p">)</span>
+<span class="n">address</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;www.python.org&#39;</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
+<span class="n">person</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Stan&quot;</span><span class="p">,</span> <span class="s2">&quot;Baek&quot;</span><span class="p">,</span> <span class="s2">&quot;stanley.baek@afacademy&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Python often recognizes that a tuple is intended even if the parentheses are missing</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stock</span> <span class="o">=</span> <span class="s2">&quot;GOOG&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">490.10</span>
+<span class="n">address</span> <span class="o">=</span> <span class="s1">&#39;www.python.org&#39;</span><span class="p">,</span> <span class="mi">80</span>
+<span class="n">person</span> <span class="o">=</span> <span class="s2">&quot;Stan&quot;</span><span class="p">,</span> <span class="s2">&quot;Baek&quot;</span><span class="p">,</span> <span class="s2">&quot;stanley.baek@afacademy&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>For completeness, 0- and 1-element tuples can be defined, but have special syntax:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">()</span>    <span class="c1"># 0-tuple, empty tuple</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,)</span>  <span class="c1"># 1-tuple  </span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>    <span class="c1"># 1-tuple</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># not a tuple</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">1</span>     <span class="c1"># not a tuple</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+<li><p>The values in a tuple can be extracted by numerical index just like a list. However, it is more common to unpack tuples into a set of variables like this</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="p">,</span> <span class="n">shares</span><span class="p">,</span> <span class="n">price</span> <span class="o">=</span> <span class="n">stock</span>
+<span class="n">host</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="n">address</span>
+<span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">phone</span> <span class="o">=</span> <span class="n">person</span>
+</pre></div>
+</div>
+</li>
+<li><p>Although tuples support most of the same operations as lists, such as indexing, slicing, and concatenation, the contents of a tuple <code class="docutils literal notranslate"><span class="pre">cannot</span> <span class="pre">be</span> <span class="pre">modified</span></code> after creation.  That is, you cannot replace, delete, or append new elements to an exisiting tuple.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">stock</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> 
+<span class="n">stock</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">200</span>  <span class="c1"># error</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Python tuples and strings are <code class="docutils literal notranslate"><span class="pre">immutable</span></code>. This means that once it is created, its contents cannot be changed — elements cannot be added, removed, or altered.  On the other hand, Python lists are <code class="docutils literal notranslate"><span class="pre">mutable</span></code>.</p>
+</div>
+</section>
+<section id="dictionaries">
+<h3>Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>In Python, a dictionary (or dict) is mapping between a set of indices (keys) and a set of values</p></li>
+<li><p>The items in a dictionary are key-value pairs</p></li>
+<li><p>Keys can be any Python data type</p></li>
+<li><p>Dictionaries are unordered</p></li>
+</ul>
+<ol class="arabic">
+<li><p>We can create a dictionary using curly braces:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">eng2sp</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;one&#39;</span><span class="p">:</span> <span class="s1">&#39;uno&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">:</span> <span class="s1">&#39;dos&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">:</span> <span class="s1">&#39;tres&#39;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eng2sp</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">])</span>  <span class="c1"># Output: uno</span>
+</pre></div>
+</div>
+</li>
+<li><p>An empty dictionary can be created:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dictionaries</span>
+<span class="n">eng2sp</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">eng2sp</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;uno&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eng2sp</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Keys can be retrieved using <code class="docutils literal notranslate"><span class="pre">.keys()</span></code> and values using <code class="docutils literal notranslate"><span class="pre">.values()</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># keys vs values</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eng2sp</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eng2sp</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./files"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-formatting">String Formatting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pythonic-coding">Pythonic Coding</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-list-comprehensions">Example: List Comprehensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-conditional-statements">Simplifying Conditional Statements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ternary-operator">Ternary Operator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-through-multiple-lists">Iterating Through Multiple Lists</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-data-containers">Python Data Containers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Stan Baek
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
