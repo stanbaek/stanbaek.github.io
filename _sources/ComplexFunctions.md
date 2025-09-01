@@ -1,4 +1,4 @@
-# Visualizing Complex Functions
+# 📊 Visualizing Complex Functions
 
 ## Visualizing Simple Complex Functions
 What is the domain and range of $f(x)=\sqrt{x}$? It's likely that your high school math teacher emphasized that both the domain and range comprise positive real numbers, as illustrated in the plot below:
