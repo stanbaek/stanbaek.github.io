@@ -82,8 +82,7 @@ sphinx:
 
 
 # Add a "Launch on Google Colab" button to .ipynb files
-# launch_buttons:
-#   colab_url: "https://colab.research.google.com"
-
 launch_buttons:
-  colab: true
+  colab_url: "https://colab.research.google.com"
+
+
