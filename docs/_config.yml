@@ -44,9 +44,9 @@ html:
   use_issues_button: true
   use_repository_button: true
 
-# output: 
-#   html_document:
-#     number_sections: true
+output: 
+  html_document:
+    number_sections: true
    
 parse:
   myst_substitutions:
