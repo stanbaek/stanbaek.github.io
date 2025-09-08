@@ -507,21 +507,11 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2 3 4]
-&lt;class &#39;numpy.ndarray&#39;&gt;
-int64
-&lt;class &#39;numpy.ndarray&#39;&gt;
-float64
-</pre></div>
-</div>
-</div>
 </div>
 <p>A common mistake is passing multiple arguments to <code class="docutils literal notranslate"><span class="pre">array</span></code> instead of a single sequence:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a = np.array(1, 2, 3, 4)  # WRONG</span>
-<span class="c1"># TypeError: array() takes from 1 to 2 positional arguments but 4 were given</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># TypeError: array() takes from 1 to 2 positional arguments but 4 were given</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>  <span class="c1"># RIGHT</span>
 </pre></div>
@@ -537,16 +527,6 @@ float64
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>   <span class="c1"># first row</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># first element of first row</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># first element of first row</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1.5 2.  3. ]
- [4.  5.  6. ]]
-2
-[1.5 2.  3. ]
-1.5
-1.5
 </pre></div>
 </div>
 </div>
@@ -572,21 +552,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0. 0. 0. 0. 0. 0.]
- [0. 0. 0. 0. 0. 0.]]
-[[[1 1 1 1]
-  [1 1 1 1]
-  [1 1 1 1]]
-
- [[1 1 1 1]
-  [1 1 1 1]
-  [1 1 1 1]]]
-[[0.3 0.6 0.9]
- [1.2 1.5 1.8]]
-</pre></div>
-</div>
-</div>
 </div>
 <p>To create sequences of numbers, NumPy provides the <code class="docutils literal notranslate"><span class="pre">arange</span></code> function which is analogous to the Python built-in range, but returns an array.</p>
 <div class="cell docutils container">
@@ -598,12 +563,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[10 15 20 25]
-[0.  0.3 0.6 0.9 1.2 1.5 1.8]
-</pre></div>
-</div>
-</div>
 </div>
 <p>When <code class="docutils literal notranslate"><span class="pre">arange</span></code> is used with floating point arguments, it is generally not possible to predict the number of elements obtained, due to the finite floating point precision. For this reason, it is usually better to use the function <code class="docutils literal notranslate"><span class="pre">linspace</span></code> that receives as an argument the number of elements that we want, instead of the step:</p>
 <div class="cell docutils container">
@@ -612,28 +571,6 @@ float64
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># useful to evaluate function at lots of points</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.   0.25 0.5  0.75 1.   1.25 1.5  1.75 2.  ]
-[0.         0.06346652 0.12693304 0.19039955 0.25386607 0.31733259
- 0.38079911 0.44426563 0.50773215 0.57119866 0.63466518 0.6981317
- 0.76159822 0.82506474 0.88853126 0.95199777 1.01546429 1.07893081
- 1.14239733 1.20586385 1.26933037 1.33279688 1.3962634  1.45972992
- 1.52319644 1.58666296 1.65012947 1.71359599 1.77706251 1.84052903
- 1.90399555 1.96746207 2.03092858 2.0943951  2.15786162 2.22132814
- 2.28479466 2.34826118 2.41172769 2.47519421 2.53866073 2.60212725
- 2.66559377 2.72906028 2.7925268  2.85599332 2.91945984 2.98292636
- 3.04639288 3.10985939 3.17332591 3.23679243 3.30025895 3.36372547
- 3.42719199 3.4906585  3.55412502 3.61759154 3.68105806 3.74452458
- 3.8079911  3.87145761 3.93492413 3.99839065 4.06185717 4.12532369
- 4.1887902  4.25225672 4.31572324 4.37918976 4.44265628 4.5061228
- 4.56958931 4.63305583 4.69652235 4.75998887 4.82345539 4.88692191
- 4.95038842 5.01385494 5.07732146 5.14078798 5.2042545  5.26772102
- 5.33118753 5.39465405 5.45812057 5.52158709 5.58505361 5.64852012
- 5.71198664 5.77545316 5.83891968 5.9023862  5.96585272 6.02931923
- 6.09278575 6.15625227 6.21971879 6.28318531]
 </pre></div>
 </div>
 </div>
@@ -656,14 +593,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[20 30 40 50] [0 1 2 3]
-[20 29 38 47]
-[0 1 4 9]
-[ 9.12945251 -9.88031624  7.4511316  -2.62374854]
-</pre></div>
-</div>
-</div>
 </div>
 <p><strong>Matrix multiplication</strong>: The <code class="docutils literal notranslate"><span class="pre">*</span></code> operator in NumPY performs element-wise multiplication, not matrix multiplication. Use the <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> operator, <code class="docutils literal notranslate"><span class="pre">.dot</span></code>, <code class="docutils literal notranslate"><span class="pre">np.dot()</span></code>, or <code class="docutils literal notranslate"><span class="pre">np.matmul()</span></code> for matrix multiplication:</p>
 <div class="cell docutils container">
@@ -680,24 +609,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1 1]
- [0 1]]
-[[2 0]
- [3 4]]
-[[2 0]
- [0 4]]
-[[5 4]
- [3 4]]
-[[5 4]
- [3 4]]
-[[5 4]
- [3 4]]
-[[5 4]
- [3 4]]
-</pre></div>
-</div>
-</div>
 </div>
 <p><strong>Python list vs. NumPy array</strong>: A key difference between a Python list and a NumPy array is how they handle mathematical operations. While both can store numbers like integers or floats, you cannot perform element-wise mathematical operations directly on a list. In contrast, NumPy arrays are designed for such operations.</p>
 <p>For example, with a NumPy array, you can perform operations like addition, multiplication, and exponentiation directly, while with a Python list, these operations do not behave as expected:</p>
@@ -711,13 +622,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2 4 6]
-[3 6 9]
-[1 4 9]
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -725,13 +629,7 @@ float64
 <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># [1, 2, 3, 1, 2, 3] (concatenation, not addition)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>   <span class="c1"># [1, 2, 3, 1, 2, 3, 1, 2, 3] (repetition, not multiplication)</span>
-<span class="c1"># print(b ** 2)  # Error: unsupported operand type(s) for ** or pow()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 1, 2, 3]
-[1, 2, 3, 1, 2, 3, 1, 2, 3]
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Error: unsupported operand type(s) for ** or pow()</span>
 </pre></div>
 </div>
 </div>
@@ -753,13 +651,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-()
-0
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="d-arrays-subtle-syntax-differences">
@@ -772,13 +663,6 @@ float64
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>     <span class="c1"># (1,)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>     <span class="c1"># (1,)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>      <span class="c1"># 1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1,)
-(1,)
-1
 </pre></div>
 </div>
 </div>
@@ -800,13 +684,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1, 1)
-(1, 3)
-(3, 1)
-</pre></div>
-</div>
-</div>
 </div>
 <section id="quick-check">
 <h4>Quick Check<a class="headerlink" href="#quick-check" title="Link to this heading">#</a></h4>
@@ -816,13 +693,6 @@ float64
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>         <span class="c1"># 0</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>       <span class="c1"># 1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">]])</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>     <span class="c1"># 2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-1
-2
 </pre></div>
 </div>
 </div>
@@ -852,20 +722,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[  0   1   8  27  64 125 216 343 512 729]
-8
-[ 1  8 27 64]
-[ 1  8 27 64]
-[ 1 27]
-[729 512 343 216 125  64  27   8   1   0]
-[  1   8  27  64 125 216 343 512 729]
-[ 0  1  8 27]
-[216 343]
-[1000    1 1000   27 1000  125  216  343  512  729]
-</pre></div>
-</div>
-</div>
 </div>
 <p>Two-dimensional arrays can be indexed like matrices:</p>
 <div class="cell docutils container">
@@ -875,15 +731,6 @@ float64
 <span class="nb">print</span><span class="p">(</span><span class="n">arr2</span><span class="p">[</span><span class="mi">0</span><span class="p">,:])</span> <span class="c1"># first row</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">arr2</span><span class="p">[:,</span><span class="mi">4</span><span class="p">])</span> <span class="c1"># last column</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">arr2</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span> <span class="c1"># second row, columns 1 to 4 (exclusive)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1  2  3  4  5]
- [ 6  7  8  9 10]]
-[1 2 3 4 5]
-[ 5 10]
-[7 8 9]
 </pre></div>
 </div>
 </div>
@@ -901,14 +748,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1 2 3]
- [4 5 6]]
-(2, 3)
-(2, 3)
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -916,14 +755,6 @@ float64
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>     <span class="c1">#  array shape </span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1 2]
- [3 4]
- [5 6]]
-(3, 2)
 </pre></div>
 </div>
 </div>
@@ -937,12 +768,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1 2 3 4 5 6]
-(6,)
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -951,16 +776,6 @@ float64
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># same as x.T</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1 4]
- [2 5]
- [3 6]]
-[[1 4]
- [2 5]
- [3 6]]
 </pre></div>
 </div>
 </div>
@@ -977,17 +792,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1 2 3]
- [4 5 6]]
-[[1 2 3]
- [3 4 5]
- [4 5 6]]
-[[1 3 2 3]
- [4 4 5 6]]
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -996,14 +800,6 @@ float64
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">flipud</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># reverse the order elements along the col axis (or reverse up and down)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[3 2 1]
- [6 5 4]]
-[[4 5 6]
- [1 2 3]]
 </pre></div>
 </div>
 </div>
@@ -1024,16 +820,6 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-2.0000000000000004
-[[-2.   1. ]
- [ 1.5 -0.5]]
-[-0.37228132  5.37228132]
-[[-0.82456484 -0.41597356]
- [ 0.56576746 -0.90937671]]
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="logical-functions">
@@ -1050,27 +836,13 @@ float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[ True False False]
-False
-True
-False
-True
-</pre></div>
-</div>
-</div>
 </div>
 <p>Python lists do not have <code class="docutils literal notranslate"><span class="pre">all()</span></code> method</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>            <span class="c1"># y is a list</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">y</span><span class="o">==</span><span class="mi">0</span><span class="p">))</span>  <span class="c1"># np.all() takes a list argument</span>
-<span class="c1"># print((y==0).all())  # a list object does not have all() method.</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+<span class="nb">print</span><span class="p">((</span><span class="n">y</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">())</span>  <span class="c1"># a list object does not have all() method.</span>
 </pre></div>
 </div>
 </div>
@@ -1100,9 +872,6 @@ True
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/730d526b6463c62986894802ab81922d011b358573ac31ad0977a0567b561dd0.png" src="../_images/730d526b6463c62986894802ab81922d011b358573ac31ad0977a0567b561dd0.png" />
-</div>
 </div>
 </section>
 <section id="customizing-plot-appearance">
@@ -1124,9 +893,6 @@ True
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/f7b9cabddbbd98aee2332657cbcd23744ec6d9d7718a15efcb28f3ed4722bac4.png" src="../_images/f7b9cabddbbd98aee2332657cbcd23744ec6d9d7718a15efcb28f3ed4722bac4.png" />
-</div>
 </div>
 </section>
 <section id="scatter-plot">
@@ -1144,9 +910,6 @@ True
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/8a4292e67197ec66d8a36eb0b1a3d9b36db9db4d5b21dba681044cadfb69fcce.png" src="../_images/8a4292e67197ec66d8a36eb0b1a3d9b36db9db4d5b21dba681044cadfb69fcce.png" />
 </div>
 </div>
 </section>
@@ -1168,9 +931,6 @@ True
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/4845c278832ec9e1230e97ee8c043e91b82478d572bb70a6480ef90119ab784e.png" src="../_images/4845c278832ec9e1230e97ee8c043e91b82478d572bb70a6480ef90119ab784e.png" />
-</div>
 </div>
 </section>
 <section id="histogram">
@@ -1186,9 +946,6 @@ True
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/b4cb2f2a3007af6d97d641aaa942d8eda74fae518a1635245b3a70263be5f5f8.png" src="../_images/b4cb2f2a3007af6d97d641aaa942d8eda74fae518a1635245b3a70263be5f5f8.png" />
 </div>
 </div>
 </section>
@@ -1212,9 +969,6 @@ True
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/105d12d070a9b8426750c390ca9d475c768ae7df3e2ffa0cb63cae0f6c36cd56.png" src="../_images/105d12d070a9b8426750c390ca9d475c768ae7df3e2ffa0cb63cae0f6c36cd56.png" />
 </div>
 </div>
 </section>
