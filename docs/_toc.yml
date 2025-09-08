@@ -24,6 +24,6 @@ parts:
   chapters:
   - file: workshops/PythonBasic.md
   - file: workshops/PythonIntermediate.ipynb
-  - file: workshops/NumPy.md
+  - file: workshops/NumPy.ipynb
 
 
