@@ -14,6 +14,8 @@ parts:
     title: ECE387 Intro to Robotic Systems
   - url: https://usafa-ece.github.io/ece346/intro.html
     title: ECE346 Engineering Math
+  - url: https://usafa-ece.github.io/ece333/intro.html
+    title: ECE333 Signals & Systems
   - url: https://usafa-ece.github.io/ece281-book/intro.html
     title: ECE281 Digital Design and Computer Architecture
 - caption: Blog
