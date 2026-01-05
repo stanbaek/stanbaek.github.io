@@ -24,6 +24,7 @@ My research ‍🔬 interests include reinforcement learning of autonomous robot
 :width: 680
 :align: left
 ```
+<br>
 
 ```{tableofcontents}
 ```
