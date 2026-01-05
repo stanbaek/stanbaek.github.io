@@ -22,7 +22,7 @@ My research ‍🔬 interests include reinforcement learning of autonomous robot
 
 ```{image} ./figures/ChatGPT.png
 :width: 680
-:align: left
+:align: center
 ```
 <br>
 
